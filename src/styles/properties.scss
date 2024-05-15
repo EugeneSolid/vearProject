@@ -1,0 +1,131 @@
+.property-item {
+  font-family: SF Pro Display;
+  width: 370px;
+  border-radius: 13px;
+  background: #F1F2F6;
+  padding-bottom: 8px;
+
+  .info-section {
+    padding: 16px;
+  }
+
+  .property-photo {
+    height: 185px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+  }
+
+  .property-type {
+    background: rgba(255, 255, 255, 0.8);
+    width: 121px;
+    padding: 11.5px 0;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.71px;
+    letter-spacing: 0.015em;
+    color: #171719;
+    top: 16px;
+    left: 16px;
+    border-radius: 20px;
+
+    i {
+      font-size: 16px;
+      height: 16px;
+    }
+  }
+
+  .property-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23.87px;
+    letter-spacing: 0.4px;
+    text-align: left;
+    color: #17171A;
+  }
+
+  .property-address {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 12px;
+    text-align: left;
+    color: #17171A;
+
+    i {
+      color: #6B7688;
+    }
+  }
+
+  hr {
+    margin-top: 15px;
+    margin-bottom: 18px;
+    border-top: 0.5px solid #CBCBCB;
+    opacity: .75;
+  }
+
+  .total-price {
+    margin-bottom: 8px;
+
+    &__label {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 12px;
+      letter-spacing: -0.005em;
+      text-align: left;
+      color: #171719;
+    }
+
+    &__value {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 16px;
+      text-align: right;
+      color: #257CFF;
+    }
+  }
+
+  .other-price {
+    margin-bottom: 8px;
+
+    &__label {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: -0.005em;
+      text-align: left;
+      color: #7B7B7B;
+    }
+
+    &__value {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 16px;
+      text-align: right;
+      color: #171719;
+    }
+  }
+
+  .view-property-btn {
+    margin-top: 6px;
+    padding: 13px;
+    border-radius: 13px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: white;
+    background-color: #257CFF;
+    border: none;
+    transition: all .5s;
+
+    &:hover {
+      background-color: white;
+      color: #257CFF;
+    }
+  }
+}

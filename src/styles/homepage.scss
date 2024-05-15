@@ -1,0 +1,435 @@
+.homepage {
+  padding-bottom: 80px;
+  font-family: SF Pro Display;
+
+  &__main-img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .main-part-info {
+    left: 0;
+    right: 0;
+    top: 172px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    &__title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38.19px;
+      letter-spacing: 0.015em;
+      text-align: center;
+      max-width: 375px;
+      color: white;
+      text-shadow: #0000007A 0px 4px 4px;
+    }
+
+    &__description {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.8px;
+      letter-spacing: 0.015em;
+      text-align: center;
+      max-width: 520px;
+      color: white;
+      text-shadow: #0000007A 0px 4px 4px;
+    }
+
+    .play-section {
+
+      &__text {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 12px;
+        letter-spacing: 0.015em;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 16px;
+      }
+
+      &__icon {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        box-shadow: 0px 16px 16px 0px #257CFF14;
+        background: white;
+        padding: 27px 29px;
+
+        i {
+          font-size: 22px;
+          color: #257CFF;
+        }
+      }
+    }
+  }
+
+  .main-info {
+    margin-top: 80px;
+
+    padding: 0 135px;
+
+    &__header {
+      max-width: 770px;
+      left: 0;
+      right: 0;
+      margin: 0 auto 44px auto;
+    }
+
+    .advantages-section {
+      gap: 30px;
+      justify-content: space-between;
+      margin-bottom: 80px;
+
+      &__block {
+        width: 270px;
+        padding: 36px 24px 30px 24px;
+        background: linear-gradient(180deg, rgba(241, 242, 246, 0) 0%, #F1F2F6 100%);
+        border-radius: 24px;
+
+        i {
+          font-size: 49px;
+          height: 49px;
+          color: #435167;
+          margin-bottom: 23px;
+        }
+
+        .block-text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20.8px;
+          letter-spacing: 0.015em;
+          text-align: center;
+          color: #858F9F;
+        }
+      }
+    }
+
+    &__sub-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 135px;
+
+      .info {
+        max-width: 770px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+
+      .image {
+        width: 570px;
+        height: 340px;
+        object-fit: cover;
+        border-radius: 24px;
+        border: 2px solid #257CFF
+      }
+    }
+
+    &__finance-block {
+      margin: 102px 130px 0 130px;
+      height: 300px;
+      background-image: url("/src/assets/images/finance-background.png");
+      background-position: top;
+      background-repeat: no-repeat;
+      border-radius: 24px;
+
+      .block-info {
+        max-width: 770px;
+        margin-top: 70px;
+      }
+    }
+
+    &__logic-chain-section {
+      padding: 0 135px;
+      margin-bottom: 113px;
+
+      img {
+        width: 470px;
+      }
+
+      .iphone-ing {
+        width: 640px;
+      }
+
+      .how-it-works-img {
+        margin-left: 62px;
+        margin-right: 92px;
+      }
+
+      .problem-img {
+        margin-right: 130px;
+      }
+    }
+  }
+
+  .community-section {
+    margin: 160px 0;
+    padding: 80px 135px;
+    background: #F1F2F6;
+
+    .community-block {
+      box-shadow: 0px -16px 20px -16px #00000014;
+      width: 270px;
+      background: linear-gradient(180deg, #FFFFFF 17.71%, rgba(255, 255, 255, 0) 100%);
+      border-radius: 24px;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .social-media-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23.87px;
+        letter-spacing: 0.015em;
+        margin-top: 16px;
+        margin-bottom: 27px;
+      }
+
+      .follow-link-btn {
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0px 6px 10px -8px #00000029;
+        background: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11.5px 0;
+        width: 170px;
+        gap: 8px;
+        border-radius: 24px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16.71px;
+        letter-spacing: 0.015em;
+        color: black;
+        transition: all .5s;
+
+        i {
+          font-size: 16px;
+          height: 17px;
+        }
+
+        &:hover {
+          color: white;
+          background-color: #257CFF;
+        }
+      }
+    }
+  }
+
+  .team-section {
+    margin-bottom: 160px;
+    padding: 0 135px;
+    .team-member-info {
+      background: linear-gradient(135deg, rgba(241, 242, 246, 0) 0%, #F1F2F6 100%);
+      width: 370px;
+      padding: 32px;
+      border-radius: 24px;
+
+      .description {
+        margin-top: 24px;
+        line-height: 27.2px;
+        text-align: left;
+      }
+
+      .job-title {
+        font-size: 14px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 16.71px;
+        letter-spacing: 0.015em;
+        color: #858F9F;
+      }
+
+      .member-name {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.09px;
+        letter-spacing: 0.015em;
+      }
+    }
+  }
+
+  .view-whitepaper {
+    margin: 80px 135px;
+    background-color: #257CFF;
+    height: 170px;
+    border-radius: 24px;
+
+    &::after {
+      content: ' ';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.06;
+      background-image: url('/src/assets/images/dots.png');
+      background-repeat: no-repeat;
+      background-position: 50% 40%;
+      background-size: cover;
+
+    }
+
+    .section {
+      height: 100%;
+
+      .text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        text-align: center;
+        color: white;
+      }
+    }
+
+    .plane-icon {
+      left: 59px;
+      bottom: 23px;
+      width: 55px;
+      height: 50px;
+    }
+
+    .lightning-icon {
+      top: -30px;
+      right: 85px;
+      width: 75px;
+      height: 78px;
+    }
+
+    .show-whitepaper-btn {
+      z-index: 99;
+      text-decoration: none;
+      background: #FFFFFF;
+      width: 230px;
+      padding: 13px 0;
+      border-radius: 24px;
+      color: #257CFF;
+      border: none;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.09px;
+      letter-spacing: 0.015em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .fi-rr-document {
+        font-size: 22px;
+        height: 22px;
+        margin-right: 10px;
+      }
+
+      .fi-sr-angle-small-right {
+        font-size: 18px;
+        margin-left: 16px;
+        height: 19px;
+      }
+    }
+  }
+
+  .properties {
+    margin-top: 92px;
+    padding: 0 135px;
+  }
+
+  .show-all-properties-btn {
+    width: 270px;
+    padding: 18.5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 28px;
+    background: #EEF5FF;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.09px;
+    letter-spacing: 0.015em;
+    text-decoration: none;
+    margin-top: 48px;
+    gap: 4px;
+    color: #257CFF;
+
+    i {
+      font-size: 17px;
+      height: 17px;
+    }
+  }
+
+  .faq-section {
+    padding: 0 135px;
+
+    .faq-accordion-section {
+
+      .faq-accordion {
+        gap: 30px;
+      }
+
+      .accordion-item {
+        border: none;
+        margin-bottom: 30px;
+        background: linear-gradient(108.04deg, rgba(241, 242, 246, 0) 0%, #F1F2F6 79.78%);
+        border-radius: 16px;
+
+
+        .accordion-button {
+          border-radius: 16px;
+          background: #F1F2F6;
+          padding: 24px;
+
+          .accordion-icon {
+            font-size: 24px;
+            height: 26px;
+            color: #6B7688;
+          }
+
+          .faq-question {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 19.09px;
+            letter-spacing: 0.015em;
+            text-align: left;
+            color: #858F9F;
+          }
+
+          &:not(.collapsed) {
+            background-color: transparent;
+            box-shadow: none;
+
+            .accordion-icon {
+              color: #257CFF;
+            }
+
+            .faq-question {
+              display: none;
+            }
+          }
+        }
+
+        .accordion-body {
+          padding: 24px;
+
+          .title {
+            text-align: left;
+            font-size: 20px;
+            line-height: 23.87px;
+          }
+
+          .description {
+            font-weight: 500;
+            line-height: 27.2px;
+            text-align: left;
+            color: #6B7688;
+          }
+        }
+
+      }
+    }
+  }
+}

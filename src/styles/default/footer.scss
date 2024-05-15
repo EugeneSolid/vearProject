@@ -1,0 +1,59 @@
+.footer {
+  max-height: 580px;
+  background: #F1F2F6;
+  font-family: 'SF Pro Display';
+  padding: 33px 135px;
+
+  &__ad-info {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    letter-spacing: 0.015em;
+    color: #6B7688;
+  }
+
+  &__social-media-links {
+    display: flex;
+    gap: 16px;
+    .media-link {
+      padding: 14px;
+      display: block;
+      width: 56px;
+      height: 56px;
+      border-radius: 28px;
+      border: 1px solid #EAECF2;
+      background: white;
+
+      &:hover {
+        border: 1px solid white;
+        box-shadow: 0px 10px 8px -4px #00000014;
+
+        .v-icon {
+          path {
+            fill: #03A9F4;
+          }
+        }
+      }
+    }
+  }
+
+  &__tec-info-btn {
+    border-radius: 13px;
+    padding: 14px 24px;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.09px;
+    letter-spacing: 0.015em;
+    text-align: center;
+    color: #6B7688;
+    transition: all .4s;
+    text-decoration: none;
+
+    &:hover {
+      background: #FFFFFF;
+      color: #257CFF;
+    }
+  }
+}

@@ -3,6 +3,12 @@
 @import "fonts";
 @import "homepage";
 @import "properties";
+@import "marketplace";
+@import "default/login";
+
+*:focus {
+  outline: none;
+}
 
 .title {
   font-family: SF Pro Display;
@@ -21,6 +27,16 @@
   letter-spacing: 0.015em;
   text-align: center;
   color: #858F9F;
+}
+
+.error {
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  color: #F02C2C;
 }
 
 .hint {

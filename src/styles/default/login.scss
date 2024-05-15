@@ -1,0 +1,74 @@
+.login {
+  width: 370px;
+  margin: 100px auto;
+  font-family: SF Pro Display;
+
+  &__label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.015em;
+    color: #9D9E9F;
+  }
+
+  &__input {
+    background: #F1F2F6;
+    padding: 17.5px 16px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    letter-spacing: 0.015em;
+
+    &.passwd {
+      font-size: 12px !important;
+    }
+
+    &::placeholder {
+        color: #9D9E9F;
+      }
+  }
+
+  &__button {
+    border-radius: 13px;
+    background: #257CFF;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    padding: 17px 0;
+    border: none;
+  }
+
+  &__forgot-passwd {
+    text-decoration: underline;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.09px;
+    letter-spacing: 0.015em;
+    cursor: pointer;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    letter-spacing: 0.015em;
+    text-align: center;
+    color: #9D9E9F;
+  }
+
+  &__signup-button {
+    border-radius: 13px;
+    background: #EEF5FF;
+    color: #257CFF;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    padding: 17px 0;
+    border: none;
+  }
+}

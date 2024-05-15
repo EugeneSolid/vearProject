@@ -1,0 +1,33 @@
+@import "default/header";
+@import "default/footer";
+@import "fonts";
+@import "homepage";
+@import "properties";
+
+.title {
+  font-family: SF Pro Display;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.19px;
+  letter-spacing: 0.015em;
+  text-align: center;
+}
+
+.description {
+  font-family: SF Pro Display;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  letter-spacing: 0.015em;
+  text-align: center;
+  color: #858F9F;
+}
+
+.hint {
+  font-family: SF Pro Display;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0.015em;
+  color: #6B7688;
+}

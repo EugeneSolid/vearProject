@@ -11,7 +11,7 @@ export default {
     <div class="community-block">
       <img src="@/assets/icons/communities/Discord.svg"/>
       <p style="color: #7289DA" class="social-media-title">Discord</p>
-      <a href="https://bit.ly/3O8KjCS" class="follow-link-btn">
+      <a target="_blank" href="https://bit.ly/3O8KjCS" class="follow-link-btn">
         Join Server
         <i class="fi fi-sr-angle-small-right"></i>
       </a>
@@ -19,7 +19,7 @@ export default {
     <div class="community-block">
       <img src="@/assets/icons/communities/Telegram.svg"/>
       <p style="color: #1E96C8" class="social-media-title">Telegram</p>
-      <a href="https://bit.ly/3Pp9C4k" class="follow-link-btn">
+      <a target="_blank" href="https://bit.ly/3Pp9C4k" class="follow-link-btn">
         Join Channel
         <i class="fi fi-sr-angle-small-right"></i>
       </a>
@@ -27,7 +27,7 @@ export default {
     <div class="community-block">
       <img src="@/assets/icons/communities/Twitter.svg"/>
       <p style="color: #2DAAE1" class="social-media-title">Twitter</p>
-      <a href="https://bit.ly/3PcWT59" class="follow-link-btn">
+      <a target="_blank" href="https://bit.ly/3PcWT59" class="follow-link-btn">
         Follow Us
         <i class="fi fi-sr-angle-small-right"></i>
       </a>
@@ -35,7 +35,7 @@ export default {
     <div class="community-block">
       <img src="@/assets/icons/communities/Medium.svg"/>
       <p class="social-media-title">Medium</p>
-      <a href="https://bit.ly/3cdUE2X" class="follow-link-btn">
+      <a target="_blank" href="https://bit.ly/3cdUE2X" class="follow-link-btn">
         Follow Us
         <i class="fi fi-sr-angle-small-right"></i>
       </a>

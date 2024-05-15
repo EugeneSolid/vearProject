@@ -17,7 +17,8 @@ export default {
   <header class="header">
     <div class="d-flex justify-content-between align-items-center">
       <router-link style="background-color: transparent !important;" to="/">
-        <img src="/images/white-logo.svg" alt="logo"/>
+        <img v-if="this.$route.path === '/'" src="/images/white-logo.svg" alt="logo"/>
+        <img v-else src="/images/logo.svg" alt="logo"/>
       </router-link>
       <div v-if="this.$route.path === '/'" class="d-flex gap-3">
         <router-link class="header__link home-link" to="/marketplace">Marketplace</router-link>
@@ -39,7 +40,7 @@ export default {
           <span class="ms-2">Swap</span></router-link>
       </div>
       <div v-if="this.$route.path === '/'">
-        <a class="header__button" href="https://bit.ly/LEpaper">
+        <a target="_blank" class="header__button" href="https://bit.ly/LEpaper">
           <i class="fi fi-rr-document"></i>
           Whitepaper
         </a>

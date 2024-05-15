@@ -80,6 +80,13 @@
     line-height: 19.09px;
     text-align: left;
     color: black;
+    background-color: transparent !important;
+
+    &.router-link-active {
+      .profile-img {
+        border: 4px solid #257CFF;
+      }
+    }
 
 
     .profile-img {

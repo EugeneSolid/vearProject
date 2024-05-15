@@ -1,0 +1,177 @@
+.portfolio {
+  padding: 0 135px 56px 135px;
+  font-family: SF Pro Display;
+
+  .profile-image-section {
+    width: 104px;
+    height: 104px;
+    margin: 0 auto;
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 52px;
+      border: 4px solid #FFFFFF;
+    }
+
+    .camera-icon {
+      padding: 3px;
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+      background-color:white;
+      right: 4px;
+      top: 73px;
+      color: #257CFF;
+      border-radius: 52px;
+    }
+  }
+
+  .profile-name {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.64px;
+    text-align: center;
+    color: #17171A;
+    letter-spacing: 0.7px;
+    margin-top: 16px;
+  }
+
+  .profile-sidebar {
+    width: 370px;
+    border-radius: 18px;
+    background: #F1F2F6;
+    padding: 24px;
+    flex: 0 0 370px;
+    height: fit-content;
+
+    .sidebar-option {
+      border-radius: 13px;
+      padding: 17px 18.5px;
+      border: none;
+      text-decoration: none;
+      background-color: transparent;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.09px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #6B7688;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      
+      .option-name {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        i {
+          font-size: 22px;
+          height: 22px;
+        }
+
+        .logout-icon {
+          transform: scale(-1, 1)
+        }
+      }
+
+      .arrow-icon {
+        height: 16px;
+      }
+
+      &.router-link-exact-active {
+        background: #FFFFFF;
+        color: #257CFF;
+        font-weight: 700;
+      }
+    }
+
+  }
+
+  .settings-page {
+
+    .main-info-section {
+      margin-bottom: 32px;
+    }
+
+    .profile-name-info {
+      gap: 30px;
+    }
+
+    &__section {
+      border-radius: 18px;
+      background: #F1F2F6;
+      padding: 24px;
+
+      .section-label {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        letter-spacing: 0.015em;
+        text-align: left;
+        color: #6B7688;
+        margin-bottom: 11px;
+      }
+
+      .section-field {
+        border-radius: 15px;
+        background-color: white;
+        padding: 17.5px 16px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        letter-spacing: 0.015em;
+        color: #171719;
+        border: none;
+
+        &.disabled {
+          color: #9BA6B7;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 23.87px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #17171A;
+    }
+
+    &__info-text {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20.8px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #6B7688;
+    }
+
+    .resident-question {
+      margin-top: 32px;
+      background: #F1F2F6;
+      border-radius: 18px;
+      padding: 8px 8px 8px 24px;
+
+      &__button {
+        width: 96px;
+        padding: 13.5px 0;
+        border-radius: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20.8px;
+        letter-spacing: 0.015em;
+        text-align: center;
+        border: none;
+        background: #FFFFFF;
+        color: #6B7688;
+
+        &.active {
+          background: #257CFF;
+          color: white;
+        }
+      }
+    }
+  }
+}

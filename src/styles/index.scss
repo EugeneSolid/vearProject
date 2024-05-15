@@ -4,6 +4,7 @@
 @import "homepage";
 @import "properties";
 @import "marketplace";
+@import "profile";
 @import "default/login";
 
 *:focus {
@@ -15,7 +16,7 @@
   font-size: 32px;
   font-weight: 600;
   line-height: 38.19px;
-  letter-spacing: 0.015em;
+  letter-spacing: 0.04em;
   text-align: center;
 }
 
@@ -36,7 +37,7 @@
   line-height: 20.8px;
   letter-spacing: 0.015em;
   text-align: center;
-  color: #F02C2C;
+  color: #F02C2C !important;
 }
 
 .hint {

@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="team-section" id="ourTeam">
-    <p class="mb-4 title">Founding Team</p>
+    <h2 class="mb-4 title">Founding Team</h2>
     <div class="d-flex justify-content-between">
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">

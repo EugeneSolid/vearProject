@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="faq-section" id="faqSection">
-    <p class="mb-5 title">F.A.Q.</p>
+    <h2 class="mb-5 title">F.A.Q.</h2>
     <div class="w-100 faq-accordion-section">
       <div class="accordion d-flex faq-accordion w-100" id="faqAccordion">
         <div class="w-100">

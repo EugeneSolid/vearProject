@@ -40,7 +40,7 @@ export default {
       <img src="/images/logo.svg">
     </div>
     <div class="text-center">
-      <p class="title">Login</p>
+      <h1 class="title mb-4">Login</h1>
       <div class="d-flex flex-column">
         <label class="text-start mb-3 login__label">Email ID</label>
         <input class="login__input" placeholder="You@example.com" type="text" v-model="name">

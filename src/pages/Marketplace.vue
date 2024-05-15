@@ -109,11 +109,11 @@ export default {
   <default-layout>
     <div class="marketplace">
       <div class="marketplace__header">
-        <p class="mb-2 title">Browse Properties</p>
+        <h1 class="mb-2 title">Browse Properties</h1>
         <p class="mb-2 description">Invest in real estate with as little as 100$, Transactions using the blockchain,
           Earn rent immediately, Real legal ownership, Sell any time</p>
       </div>
-      <div class="mt-1">
+      <div class="mt-3">
         <div class="d-flex property-view-toggler mb-4">
           <button @click="this.selectedType = 'new'"
                   :class="{'toggler-btn': true, 'selected': this.selectedType === 'new'}">New Listings

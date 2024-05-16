@@ -17,7 +17,7 @@ export default {
         <p class="mb-0 play-section__text">Our Explainer Video</p>
       </div>
     </div>
-    <img class="homepage__main-img" src="/images/main.png">
+    <img class="homepage__main-img" src="/vearProject/images/main.png">
   </div>
 </template>
 

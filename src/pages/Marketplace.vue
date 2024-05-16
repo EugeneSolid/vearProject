@@ -10,7 +10,7 @@ export default {
       selectedType: 'new',
       properties: [
         {
-          image: '/images/properties/property-1.png',
+          image: '/vearProject/images/properties/property-1.png',
           type: {name: 'Comercial', icon: 'fi fi-ss-building'},
           name: '1230-1232 Dartmouth St',
           number: 'LE0001',
@@ -20,7 +20,7 @@ export default {
           rent: '$1,905'
         },
         {
-          image: '/images/properties/property-2.png',
+          image: '/vearProject/images/properties/property-2.png',
           type: {name: 'Industrial', icon: 'fi fi-ss-garage-open'},
           name: '1411-1413 Pine Street',
           number: 'LE0002',
@@ -30,7 +30,7 @@ export default {
           rent: '$2,251'
         },
         {
-          image: '/images/properties/property-3.png',
+          image: '/vearProject/images/properties/property-3.png',
           type: {name: 'Residential', icon: 'fi fi-ss-house-chimney'},
           name: '1427-1429-1431 Washburn St',
           number: 'LE0003',
@@ -40,7 +40,7 @@ export default {
           rent: '$2,771'
         },
         {
-          image: '/images/properties/property-1.png',
+          image: '/vearProject/images/properties/property-1.png',
           type: {name: 'Comercial', icon: 'fi fi-ss-building'},
           name: '1230-1232 Dartmouth St',
           number: 'LE0001',
@@ -50,7 +50,7 @@ export default {
           rent: '$1,905'
         },
         {
-          image: '/images/properties/property-2.png',
+          image: '/vearProject/images/properties/property-2.png',
           type: {name: 'Industrial', icon: 'fi fi-ss-garage-open'},
           name: '1411-1413 Pine Street',
           number: 'LE0002',
@@ -60,7 +60,7 @@ export default {
           rent: '$2,251'
         },
         {
-          image: '/images/properties/property-3.png',
+          image: '/vearProject/images/properties/property-3.png',
           type: {name: 'Residential', icon: 'fi fi-ss-house-chimney'},
           name: '1427-1429-1431 Washburn St',
           number: 'LE0003',
@@ -70,7 +70,7 @@ export default {
           rent: '$2,771'
         },
         {
-          image: '/images/properties/property-1.png',
+          image: '/vearProject/images/properties/property-1.png',
           type: {name: 'Comercial', icon: 'fi fi-ss-building'},
           name: '1230-1232 Dartmouth St',
           number: 'LE0001',
@@ -80,7 +80,7 @@ export default {
           rent: '$1,905'
         },
         {
-          image: '/images/properties/property-2.png',
+          image: '/vearProject/images/properties/property-2.png',
           type: {name: 'Industrial', icon: 'fi fi-ss-garage-open'},
           name: '1411-1413 Pine Street',
           number: 'LE0002',
@@ -90,7 +90,7 @@ export default {
           rent: '$2,251'
         },
         {
-          image: '/images/properties/property-3.png',
+          image: '/vearProject/images/properties/property-3.png',
           type: {name: 'Residential', icon: 'fi fi-ss-house-chimney'},
           name: '1427-1429-1431 Washburn St',
           number: 'LE0003',

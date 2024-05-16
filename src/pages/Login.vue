@@ -37,7 +37,7 @@ export default {
 <template>
   <div class="login">
     <div style="margin-bottom: 95px;" class="w-100 text-center">
-      <img src="/images/logo.svg">
+      <img src="/vearProject/images/logo.svg">
     </div>
     <div class="text-center">
       <h1 class="title mb-4">Login</h1>

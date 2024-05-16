@@ -10,7 +10,7 @@ export default {
 <template>
   <footer class="footer">
     <div class="d-flex justify-content-between mb-4 align-items-start">
-      <img src="/images/logo.svg" alt="logo">
+      <img src="/vearProject/images/logo.svg" alt="logo">
       <div class="d-flex flex-column justify-content-end">
         <div class="d-flex justify-content-end mb-3">
           <a href="#ourTeam" class="footer__tec-info-btn">About Us</a>
@@ -19,15 +19,15 @@ export default {
           <a href="mailto:hello@liquidestate.io" class="footer__tec-info-btn">Contact</a>
         </div>
         <div class="footer__social-media-links">
-          <a target="_blank" class="media-link" href="https://bit.ly/3Pp9C4k"><v-icon icon-url="/images/icons/telegram.svg"/></a>
-          <a target="_blank" class="media-link" href="https://bit.ly/3PcWT59"><v-icon icon-url="/images/icons/twitter.svg"/></a>
-          <a target="_blank" class="media-link" href="https://bit.ly/3cdUE2X"><v-icon icon-url="/images/icons/medium.svg"/></a>
-          <a target="_blank" class="media-link" href="https://bit.ly/3O8KjCS"><v-icon icon-url="/images/icons/discord.svg"/></a>
-          <a target="_blank" class="media-link" href="https://bit.ly/3cgSm3g"><v-icon icon-url="/images/icons/reddit.svg"/></a>
-          <a target="_blank" class="media-link" href="https://bit.ly/3RMMgIa"><v-icon icon-url="/images/icons/linkedin.svg"/></a>
-          <a target="_blank" class="media-link" href="https://bit.ly/3aE6jrl"><v-icon icon-url="/images/icons/facebook.svg"/></a>
-          <a target="_blank" class="media-link" href="https://www.instagram.com/"><v-icon icon-url="/images/icons/instagram.svg"/></a>
-          <a target="_blank" class="media-link" href="https://bit.ly/3z6ezK6"><v-icon icon-url="/images/icons/youtube.svg"/></a>
+          <a target="_blank" class="media-link" href="https://bit.ly/3Pp9C4k"><v-icon icon-url="/vearProject/images/icons/telegram.svg"/></a>
+          <a target="_blank" class="media-link" href="https://bit.ly/3PcWT59"><v-icon icon-url="/vearProject/images/icons/twitter.svg"/></a>
+          <a target="_blank" class="media-link" href="https://bit.ly/3cdUE2X"><v-icon icon-url="/vearProject/images/icons/medium.svg"/></a>
+          <a target="_blank" class="media-link" href="https://bit.ly/3O8KjCS"><v-icon icon-url="/vearProject/images/icons/discord.svg"/></a>
+          <a target="_blank" class="media-link" href="https://bit.ly/3cgSm3g"><v-icon icon-url="/vearProject/images/icons/reddit.svg"/></a>
+          <a target="_blank" class="media-link" href="https://bit.ly/3RMMgIa"><v-icon icon-url="/vearProject/images/icons/linkedin.svg"/></a>
+          <a target="_blank" class="media-link" href="https://bit.ly/3aE6jrl"><v-icon icon-url="/vearProject/images/icons/facebook.svg"/></a>
+          <a target="_blank" class="media-link" href="https://www.instagram.com/"><v-icon icon-url="/vearProject/images/icons/instagram.svg"/></a>
+          <a target="_blank" class="media-link" href="https://bit.ly/3z6ezK6"><v-icon icon-url="/vearProject/images/icons/youtube.svg"/></a>
 
         </div>
       </div>

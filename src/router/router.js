@@ -7,12 +7,13 @@ import Profile from "@/pages/Profile.vue";
 import ProfileWallets from "@/components/profile/ProfileWallets.vue";
 import ProfileSettings from "@/components/profile/ProfileSettings.vue";
 import ProfileClaimRent from "@/components/profile/ProfileClaimRent.vue";
+import Portfolio from "@/pages/Portfolio.vue";
 
 const routes = [
     {path: '/', component: Homepage},
     {path: '/marketplace', component: Marketplace},
     {path: '/login', component: Login},
-    {path: '/portfolio', component: Login},
+    {path: '/portfolio', component: Portfolio},
     {
         path: '/profile',
         component: Profile,
@@ -35,7 +36,7 @@ const routes = [
 
 const router = createRouter({
     mode: 'history',
-    history: createWebHistory(),
+    history: createWebHistory('/vearProject/'),
     routes,
 })
 

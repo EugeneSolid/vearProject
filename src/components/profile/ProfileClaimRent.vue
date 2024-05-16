@@ -61,7 +61,7 @@ export default {
           </tr>
           <tr class="separator header"/>
           <tr class="table-row">
-            <td class="table-text bold"><img class="table-property-img" src="/images/properties/property-1.png">LE0001</td>
+            <td class="table-text bold"><img class="table-property-img" src="/vearProject/images/properties/property-1.png">LE0001</td>
             <td class="table-text">3.000</td>
             <td>
               <div class="d-flex flex-column">
@@ -81,7 +81,7 @@ export default {
           </tr>
           <tr class="separator"/>
           <tr class="table-row">
-            <td class="table-text bold"><img class="table-property-img" src="/images/properties/property-2.png">LE0002</td>
+            <td class="table-text bold"><img class="table-property-img" src="/vearProject/images/properties/property-2.png">LE0002</td>
             <td class="table-text">3.000</td>
             <td>
               <div class="d-flex flex-column">
@@ -101,7 +101,7 @@ export default {
           </tr>
           <tr class="separator"/>
           <tr class="table-row">
-            <td class="table-text bold"><img class="table-property-img" src="/images/properties/property-3.png">LE0003</td>
+            <td class="table-text bold"><img class="table-property-img" src="/vearProject/images/properties/property-3.png">LE0003</td>
             <td class="table-text">3.000</td>
             <td>
               <div class="d-flex flex-column">

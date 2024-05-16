@@ -14,7 +14,7 @@ export default {
       <h1 class="mb-4 title">My Account</h1>
       <div class="w-100 text-center">
         <div class="position-relative profile-image-section">
-          <img class="profile-img" src="/images/header/profile.jpeg">
+          <img class="profile-img" src="/vearProject/images/header/profile.jpeg">
           <i class="fi fi-ss-circle-camera camera-icon position-absolute bottom-0"></i>
         </div>
         <p class="mb-0 profile-name">Micheal Antonio</p>

@@ -17,8 +17,8 @@ export default {
   <header class="header">
     <div class="d-flex justify-content-between align-items-center">
       <router-link style="background-color: transparent !important;" to="/">
-        <img v-if="this.$route.path === '/'" src="/images/white-logo.svg" alt="logo"/>
-        <img v-else src="/images/logo.svg" alt="logo"/>
+        <img v-if="this.$route.path === '/'" src="/vearProject/images/white-logo.svg" alt="logo"/>
+        <img v-else src="/vearProject/images/logo.svg" alt="logo"/>
       </router-link>
       <div v-if="this.$route.path === '/'" class="d-flex gap-3">
         <router-link class="header__link home-link" to="/marketplace">Marketplace</router-link>
@@ -27,16 +27,16 @@ export default {
       </div>
       <div v-else class="d-flex gap-5">
         <router-link v-if="this.isUserAuthorized()" class="header__link d-flex align-items-center" to="/portfolio">
-          <v-icon icon-url="/images/header/portfolio.svg"/>
+          <v-icon icon-url="/vearProject/images/header/portfolio.svg"/>
           <span class="ms-2">Portfolio</span></router-link>
         <router-link class="header__link d-flex align-items-center" to="/marketplace">
-          <v-icon icon-url="/images/header/marketplace.svg"/>
+          <v-icon icon-url="/vearProject/images/header/marketplace.svg"/>
           <span class="ms-2">Marketplace</span></router-link>
         <router-link v-if="!this.isUserAuthorized()" class="header__link d-flex align-items-center" to="/login">
-          <v-icon icon-url="/images/header/portfolio.svg"/>
+          <v-icon icon-url="/vearProject/images/header/portfolio.svg"/>
           <span class="ms-2">Portfolio</span></router-link>
         <router-link v-if="this.isUserAuthorized()" class="header__link d-flex align-items-center" to="/swap">
-          <v-icon icon-url="/images/header/swap.svg"/>
+          <v-icon icon-url="/vearProject/images/header/swap.svg"/>
           <span class="ms-2">Swap</span></router-link>
       </div>
       <div v-if="this.$route.path === '/'">
@@ -51,7 +51,7 @@ export default {
           Login/Register
         </router-link>
         <router-link v-else class="profile-btn" to="/profile">
-          <img class="profile-img" src="/images/header/profile.jpeg"/>
+          <img class="profile-img" src="/vearProject/images/header/profile.jpeg"/>
           Micheal Antonio
         </router-link>
       </div>

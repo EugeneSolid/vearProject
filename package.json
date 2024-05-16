@@ -11,7 +11,7 @@
     "@flaticon/flaticon-uicons": "^3.2.1",
     "bootstrap": "^5.3.3",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13",
+    "vue": "^3.2.26",
     "vue-inline-svg": "^3.1.2",
     "vue-router": "^4.3.2",
     "vuex": "^4.0.2"

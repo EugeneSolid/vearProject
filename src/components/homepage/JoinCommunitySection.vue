@@ -7,7 +7,7 @@ export default {
 <template>
 <div class="community-section d-flex flex-column align-items-center">
   <p class="title mb-5">Join Our Community</p>
-  <div class="d-flex w-100 justify-content-between">
+  <div class="d-flex w-100 justify-content-between community-list">
     <div class="community-block">
       <img src="@/assets/icons/communities/Discord.svg"/>
       <p style="color: #7289DA" class="social-media-title">Discord</p>

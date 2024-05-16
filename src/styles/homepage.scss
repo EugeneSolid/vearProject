@@ -4,6 +4,7 @@
 
   &__main-img {
     width: 100%;
+    min-height: 680px;
     object-fit: cover;
   }
 
@@ -66,9 +67,8 @@
   }
 
   .main-info {
-    margin-top: 80px;
-
-    padding: 0 135px;
+    max-width: 1170px;
+    margin: 80px auto 0 auto;
 
     &__header {
       max-width: 770px;
@@ -110,7 +110,8 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0 135px;
+      margin: 0 auto;
+      max-width: 1170px;
 
       .info {
         max-width: 770px;
@@ -129,7 +130,8 @@
     }
 
     &__finance-block {
-      margin: 102px 130px 0 130px;
+      margin: 102px auto 0 auto;
+      width: 1170px;
       height: 300px;
       background-image: url("/src/assets/images/finance-background.png");
       background-position: top;
@@ -143,8 +145,8 @@
     }
 
     &__logic-chain-section {
-      padding: 0 135px;
-      margin-bottom: 113px;
+      max-width: 1170px;
+      margin: 0 auto 113px auto;
 
       img {
         width: 470px;
@@ -169,6 +171,10 @@
     margin: 160px 0;
     padding: 80px 135px;
     background: #F1F2F6;
+
+    .community-list {
+      max-width: 1170px !important;
+    }
 
     .community-block {
       box-shadow: 0px -16px 20px -16px #00000014;
@@ -222,8 +228,8 @@
   }
 
   .team-section {
-    margin-bottom: 160px;
-    padding: 0 135px;
+    max-width: 1170px;
+    margin: 0 auto 160px auto;
     .team-member-info {
       background: linear-gradient(135deg, rgba(241, 242, 246, 0) 0%, #F1F2F6 100%);
       width: 370px;
@@ -255,7 +261,8 @@
   }
 
   .view-whitepaper {
-    margin: 80px 135px;
+    max-width: 1170px;
+    margin: 80px auto;
     background-color: #257CFF;
     height: 170px;
     border-radius: 24px;
@@ -335,8 +342,8 @@
   }
 
   .properties {
-    margin-top: 92px;
-    padding: 0 135px;
+    max-width: 1170px;
+    margin: 92px auto 0 auto;
   }
 
   .show-all-properties-btn {
@@ -363,7 +370,8 @@
   }
 
   .faq-section {
-    padding: 0 135px;
+    max-width: 1170px;
+    margin: 0 auto;
 
     .faq-accordion-section {
 

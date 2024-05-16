@@ -150,7 +150,7 @@
         line-height: 26px;
         letter-spacing: 0.015em;
         text-align: left;
-        padding: 19px 24px;
+        padding: 19px 60px 19px 24px;
 
         &.highlight-area {
           background: #EEF5FF;
@@ -242,9 +242,205 @@
         }
       }
     }
-  }
 
-  .wallets-page {
+    .redirect-info {
+      font-family: SF Pro Display;
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 18.2px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #171719;
 
+      &-link {
+        color: #257CFF;
+        text-decoration: underline;
+      }
+    }
+
+    .claim-section {
+      margin-top: 56px;
+
+      &__title {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.8px;
+        letter-spacing: 0.015em;
+        text-align: left;
+        color: #6B7688;
+      }
+
+      &__currency {
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 31.2px;
+        letter-spacing: 0.015em;
+        color: #171719;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &_span {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20.8px;
+          letter-spacing: 0.015em;
+          text-align: left;
+          color: #6B7688;
+        }
+      }
+
+      &__info {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20.8px;
+        letter-spacing: 0.015em;
+        color: #171719;
+      }
+
+      .section-add-btn {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 23.87px;
+        letter-spacing: 0.015em;
+      }
+
+      &__table {
+        margin-top: 19px;
+        table-layout: fixed;
+
+        .separator {
+          height: 8px;
+
+          &.header {
+            height: 16px;
+          }
+        }
+
+        .table-columns {
+          background: #FFFFFF;
+
+          th {
+            padding: 19.5px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16.71px;
+            letter-spacing: 0.015em;
+            color: #6B7688;
+
+            &:first-child {
+              border-top-left-radius: 13px;
+              border-bottom-left-radius: 13px;
+            }
+
+            &:last-child {
+              border-top-right-radius: 13px;
+              border-bottom-right-radius: 13px;
+            }
+          }
+        }
+
+        .table-row {
+          background: #FFFFFF;
+
+          td {
+            padding: 20px 24px;
+
+            .claim-btn {
+              border-radius: 15px;
+              background: #257CFF;
+              padding: 11.5px 0;
+              color: #FFFFFF;
+              font-size: 14px;
+              font-weight: 700;
+              line-height: 16.71px;
+              letter-spacing: 0.015em;
+              width: 105px;
+              border: none;
+
+              &.locked {
+                background: #6B7688;
+              }
+            }
+
+            .table-property-img {
+              width: 40px;
+              height: 40px;
+              border-radius: 28px;
+              margin-right: 8px;
+            }
+
+            .locked-hint {
+              padding: 16px;
+              left: -412px;
+              top: -75px;
+              box-shadow: 0px 7px 8px -4px #00000014;
+              width: 421px;
+              border-radius: 13px;
+              border: 1px solid #F1F2F6;
+              background: white;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 20.8px;
+              letter-spacing: 0.015em;
+              color: #171719;
+            }
+
+            .hint-icon {
+              left: -23px;
+              top: 8.5px;
+              font-size: 20px;
+
+              &.open {
+                color: #6B7688;
+              }
+
+              &.opened {
+                color: #257CFF;
+              }
+            }
+
+            &:first-child {
+              border-top-left-radius: 13px;
+              border-bottom-left-radius: 13px;
+            }
+
+            &:last-child {
+              border-top-right-radius: 13px;
+              border-bottom-right-radius: 13px;
+            }
+          }
+
+          .table-text {
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 19.09px;
+            letter-spacing: 0.015em;
+            text-align: left;
+            color: #171719;
+
+            &.bold {
+              font-weight: 700;
+            }
+          }
+
+          .table-subtext {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.71px;
+            letter-spacing: 0.015em;
+            color: #435167;
+          }
+        }
+      }
+    }
+
+    .delimiter {
+      top: 253px;
+      left: 0;
+      z-index: 999;
+      border-top: 1px solid #D7DEE9;
+      opacity: 1;
+    }
   }
 }

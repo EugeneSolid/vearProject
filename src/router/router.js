@@ -6,7 +6,7 @@ import Login from "@/pages/Login.vue";
 import Profile from "@/pages/Profile.vue";
 import ProfileWallets from "@/components/profile/ProfileWallets.vue";
 import ProfileSettings from "@/components/profile/ProfileSettings.vue";
-import ProfileClaimRent from "@/components/profile/profileClaimRent.vue";
+import ProfileClaimRent from "@/components/profile/ProfileClaimRent.vue";
 
 const routes = [
     {path: '/', component: Homepage},

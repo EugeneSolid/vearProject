@@ -10,7 +10,7 @@ export default {
 
 <template>
   <default-layout>
-    <div class="portfolio">
+    <div class="profile">
       <h1 class="mb-4 title">My Account</h1>
       <div class="w-100 text-center">
         <div class="position-relative profile-image-section">

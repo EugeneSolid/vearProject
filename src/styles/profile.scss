@@ -1,4 +1,4 @@
-.portfolio {
+.profile {
   padding: 0 135px 56px 135px;
   font-family: SF Pro Display;
 
@@ -6,6 +6,7 @@
     width: 104px;
     height: 104px;
     margin: 0 auto;
+
     .profile-img {
       width: 100px;
       height: 100px;
@@ -18,7 +19,7 @@
       width: 30px;
       height: 30px;
       font-size: 20px;
-      background-color:white;
+      background-color: white;
       right: 4px;
       top: 73px;
       color: #257CFF;
@@ -59,7 +60,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
+
       .option-name {
         display: flex;
         align-items: center;
@@ -88,7 +89,7 @@
 
   }
 
-  .settings-page {
+  .profile-page {
 
     .main-info-section {
       margin-bottom: 32px;
@@ -111,6 +112,11 @@
         text-align: left;
         color: #6B7688;
         margin-bottom: 11px;
+
+        &.active {
+          font-weight: 600;
+          color: #171719;
+        }
       }
 
       .section-field {
@@ -128,6 +134,68 @@
           color: #9BA6B7;
         }
       }
+
+      .registered-wallet {
+        background: #FFFFFF;
+        border-radius: 18px;
+        padding: 16px;
+      }
+
+      .wallet-value {
+        border-radius: 15px;
+        background: #FFFFFF;
+        color: #257CFF;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0.015em;
+        text-align: left;
+        padding: 19px 24px;
+
+        &.highlight-area {
+          background: #EEF5FF;
+        }
+      }
+
+      .copy-value-icon {
+        font-size: 20px;
+        color: #6B7688;
+        right: 24px;
+        top: 20px;
+        cursor: pointer;
+
+        &.highlight-area {
+          color: #257CFF;
+          right: 42px;
+          top: 36px;
+        }
+      }
+
+      .section-add-btn {
+        width: 160px;
+        padding: 16px;
+        border-radius: 15px;
+        background: #257CFF;
+        color: white;
+        border: none;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.09px;
+        letter-spacing: 0.04em;
+      }
+
+      .change-btn {
+        width: 160px;
+        background: #257CFF;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.09px;
+        letter-spacing: 0.04em;
+        border: none;
+        border-radius: 10px;
+        padding: 10.5px 0;
+      }
     }
 
     &__title {
@@ -137,6 +205,7 @@
       letter-spacing: 0.015em;
       text-align: left;
       color: #17171A;
+      margin-bottom: 19px;
     }
 
     &__info-text {
@@ -173,5 +242,9 @@
         }
       }
     }
+  }
+
+  .wallets-page {
+
   }
 }

@@ -78,7 +78,7 @@ export default {
 <div class="portfolio-list__grid">
   <div class="d-flex w-100 justify-content-between">
     <div class="d-flex currency-block gap-3 align-items-center">
-      <img src="@/assets/images/currencies/usdc.svg"/>
+      <img src="/vearProject/images/currencies/usdc.svg"/>
       <div class="w-100">
         <div class="d-flex justify-content-between w-100">
           <p class="mb-2 currency-name">USDC</p>
@@ -91,7 +91,7 @@ export default {
       </div>
     </div>
     <div class="d-flex currency-block gap-3 align-items-center">
-      <img style="padding: 10px;" src="@/assets/images/currencies/usdt.svg"/>
+      <img style="padding: 10px;" src="/vearProject/images/currencies/usdt.svg"/>
       <div class="w-100">
       <div class="d-flex justify-content-between w-100">
         <p class="mb-2 currency-name">USDT</p>
@@ -104,7 +104,7 @@ export default {
       </div>
     </div>
     <div class="d-flex currency-block gap-3 align-items-center">
-      <img src="@/assets/images/currencies/lidq.svg"/>
+      <img src="/vearProject/images/currencies/lidq.svg"/>
       <div class="w-100">
         <div class="d-flex justify-content-between w-100">
           <p class="mb-2 currency-name">LIDQ</p>

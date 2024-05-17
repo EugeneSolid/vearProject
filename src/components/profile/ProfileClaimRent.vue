@@ -51,7 +51,7 @@ export default {
             <button class="section-add-btn">Claim All</button>
           </div>
         </div>
-        <table class="w-100 claim-section__table">
+        <table class="w-100 default-table">
           <tr class="table-columns">
             <th style="width: 155px;">Token</th>
             <th style="width: 135px">Tokens owned</th>

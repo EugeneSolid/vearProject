@@ -8,7 +8,7 @@ export default {
 <div class="portfolio-list__list">
   <table class="w-100 default-table">
   <tr class="table-columns">
-      <th style="width: 180px">Token</th>
+      <th style="width: 190px">Token</th>
       <th style="width: 190px">Tokens owned</th>
       <th class="ps-2" style="width: 140px">Token Price</th>
       <th style="width: 160px">Tokens Value</th>
@@ -120,6 +120,10 @@ export default {
 
 .table-columns th {
   font-size: 16px !important;
+}
+
+.table-text.bold {
+  font-size: 20px !important;
 }
 
 .claim-btn {

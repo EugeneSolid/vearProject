@@ -48,6 +48,10 @@ export default {
   </div>
 </template>
 
-<style scoped>
-
+<style lang="scss" scoped>
+.team-section {
+  .description {
+    text-align: justify!important;
+  }
+}
 </style>

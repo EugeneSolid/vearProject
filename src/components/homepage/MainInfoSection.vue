@@ -85,5 +85,9 @@ export default {
 </template>
 
 <style scoped>
-
+.main-info__logic-chain-section {
+  .description {
+    text-align: justify !important;
+  }
+}
 </style>

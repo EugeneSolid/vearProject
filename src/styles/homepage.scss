@@ -11,31 +11,26 @@
   .main-part-info {
     left: 0;
     right: 0;
-    top: 172px;
+    top: 225px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 
     &__title {
-      font-size: 32px;
+      font-size: 48px;
       font-weight: 700;
-      line-height: 38.19px;
-      letter-spacing: 0.015em;
+      line-height: 1.1;
+      letter-spacing: 0.06em;
       text-align: center;
-      max-width: 375px;
       color: white;
-      text-shadow: #0000007A 0px 4px 4px;
     }
 
     &__description {
-      font-size: 16px;
+      font-size: 20px;
       font-weight: 400;
-      line-height: 20.8px;
-      letter-spacing: 0.015em;
+      letter-spacing: 0.035em;
       text-align: center;
-      max-width: 520px;
       color: white;
-      text-shadow: #0000007A 0px 4px 4px;
     }
 
     .play-section {

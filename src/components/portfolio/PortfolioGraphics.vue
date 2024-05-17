@@ -28,7 +28,7 @@ export default {
     </div>
   </div>
     <div class="position-absolute graphic-grade">
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between prices">
         <p class="mb-0 graphic-grade__value">$89.170</p>
         <p class="mb-0 graphic-grade__value">$114.203</p>
       </div>

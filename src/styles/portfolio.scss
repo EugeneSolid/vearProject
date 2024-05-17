@@ -98,9 +98,12 @@
 
     .graphic-grade {
       bottom: 32px;
-      width: calc(1170px - 24px);
-      margin-left: -8px;
-      padding-right: 8px;
+      width: calc(1170px - 16px);
+      margin-left: -16px;
+
+      .prices {
+        padding: 0 16px;
+      }
 
       &__value {
         font-size: 12px;

@@ -72,7 +72,9 @@
         margin-right: 8px;
         object-fit: cover;
 
-
+        &.property{
+          margin-right: 17px !important;
+        }
       }
 
       .locked-hint {

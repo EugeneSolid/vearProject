@@ -1,12 +1,44 @@
 <script>
 export default {
-  name: "PortfolioGraphics"
+  name: "PortfolioGraphics",
+  data () {
+    return {
+      periods: ['1D', '1W', '1M', '6M', '5Y', 'All'],
+      selectedPeriod: '1M',
+      selectedMonth: 'May',
+      months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+    }
+  }
 }
 </script>
 
 <template>
 <div class="graphics-section">
-  <div class="linear-graphic"></div>
+  <div class="linear-graphic position-relative">
+  <div class="d-flex justify-content-between">
+    <div>
+      <p class="graphic-title">Portfolio Value</p>
+      <p class="mb-0 graphic-value">$123,346</p>
+    </div>
+    <div class="d-flex gap-2">
+      <p :class="{'graphic-period mb-0': true, 'selected': selectedPeriod === period}"
+         @click="selectedPeriod = period" v-for="period in periods">
+        {{period}}
+      </p>
+    </div>
+  </div>
+    <div class="position-absolute graphic-grade">
+      <div class="d-flex justify-content-between">
+        <p class="mb-0 graphic-grade__value">$89.170</p>
+        <p class="mb-0 graphic-grade__value">$114.203</p>
+      </div>
+      <div class="d-flex justify-content-between">
+        <p @click="selectedMonth = month"
+           :class="{'mb-0 graphic-month': true, 'selected': selectedMonth === month}"
+           v-for="month in months">{{month}}</p>
+      </div>
+    </div>
+  </div>
   <div class="d-flex justify-content-between">
     <div class="circle-graphic">
       <p class="graphic-name">Your Investments</p>

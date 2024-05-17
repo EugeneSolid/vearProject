@@ -113,7 +113,7 @@ export default {
 </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 .table-columns, .table-row {
   background-color: #F1F2F6 !important;
 }
@@ -128,6 +128,14 @@ export default {
   line-height: 22px !important;
   padding: 12px 0 !important;
   width: 146px !important;
+  transition: all .3s;
+
+  &:not(.locked) {
+    &:hover {
+      background: #FFFFFF;
+      color: #257CFF;
+    }
+  }
 }
 
 .table-property-img {

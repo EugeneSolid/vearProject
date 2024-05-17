@@ -1,0 +1,50 @@
+.swap {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 50px 0 56px 0;
+  font-family: SF Pro Display;
+
+  .swap-block {
+    margin: 0 auto;
+    width: 370px;
+    border-radius: 18px;
+    background: #F1F2F6;
+    padding: 24px;
+
+    &__title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23.87px;
+      letter-spacing: 0.015em;
+      color: #171719;
+      margin-bottom: 27px;
+    }
+
+    &__icon {
+      font-size: 20px;
+      height: 20px;
+      color: #6B7688;
+    }
+
+    .currency-selector {
+      background: #F1F2F6;
+    }
+
+    &__input {
+      background: #FFFFFF;
+      width: 100%;
+      padding: 24px;
+      border: none;
+      border-radius: 13px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 23.87px;
+      letter-spacing: 0.015em;
+      color: #171719;
+
+      &::placeholder {
+        color: #9BA6B7;
+      }
+    }
+  }
+}

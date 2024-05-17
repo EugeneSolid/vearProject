@@ -15,17 +15,17 @@ export default {
 
 <template>
   <header class="header">
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center header-elements">
       <router-link style="background-color: transparent !important;" to="/">
         <img v-if="this.$route.path === '/'" src="/vearProject/images/white-logo.svg" alt="logo"/>
         <img v-else src="/vearProject/images/logo.svg" alt="logo"/>
       </router-link>
-      <div v-if="this.$route.path === '/'" class="d-flex gap-3">
+      <div v-if="this.$route.path === '/'" class="d-flex">
         <router-link class="header__link home-link" to="/marketplace">Marketplace</router-link>
         <a class="header__link home-link" href="#ourTeam">Our Team</a>
         <a class="header__link home-link" href="mailto:hello@liquidestate.io">Contact Us</a>
       </div>
-      <div v-else class="d-flex gap-5">
+      <div v-else class="d-flex">
         <router-link v-if="this.isUserAuthorized()" class="header__link d-flex align-items-center" to="/portfolio">
           <v-icon icon-url="/vearProject/images/header/portfolio.svg"/>
           <span class="ms-2">Portfolio</span></router-link>

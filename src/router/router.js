@@ -8,12 +8,14 @@ import ProfileWallets from "@/components/profile/ProfileWallets.vue";
 import ProfileSettings from "@/components/profile/ProfileSettings.vue";
 import ProfileClaimRent from "@/components/profile/ProfileClaimRent.vue";
 import Portfolio from "@/pages/Portfolio.vue";
+import Swap from "@/pages/Swap.vue";
 
 const routes = [
     {path: '/', component: Homepage},
     {path: '/marketplace', component: Marketplace},
     {path: '/login', component: Login},
     {path: '/portfolio', component: Portfolio},
+    {path: '/swap', component: Swap},
     {
         path: '/profile',
         component: Profile,

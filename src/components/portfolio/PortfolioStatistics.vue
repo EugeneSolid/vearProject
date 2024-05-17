@@ -5,43 +5,35 @@ export default {
 </script>
 
 <template>
-  <div class="d-flex">
-    <div>
-      <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between statistics-block">
         <div>
-          <p class="mb-2">25</p>
-          <p class="mb-0">Properties Owned</p>
+          <p class="mb-2 statistic-count">25</p>
+          <p class="mb-0 statistic-label">Properties Owned</p>
         </div>
-        <i class="fi fi-rr-house-blank"></i>
+        <i class="fi statistic-icon fi-rr-house-blank"></i>
       </div>
-    </div>
-    <div>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between statistics-block">
         <div>
-          <p class="mb-2">$107.000</p>
-          <p class="mb-0">Properties Value</p>
+          <p class="mb-2 statistic-count">$107.000</p>
+          <p class="mb-0 statistic-label">Properties Value</p>
         </div>
-        <i class="fi fi-rr-usd-circle"></i>
+        <i class="fi statistic-icon fi-rr-usd-circle"></i>
       </div>
-    </div>
-    <div>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between statistics-block">
         <div>
-          <p class="mb-2">$12.000</p>
-          <p class="mb-0">Total Rent Earned</p>
+          <p class="mb-2 statistic-count">$12.000</p>
+          <p class="mb-0 statistic-label">Total Rent Earned</p>
         </div>
-        <i class="fi fi-rr-money-bills"></i>
+        <i class="fi statistic-icon fi-rr-money-bills"></i>
       </div>
-    </div>
-    <div>
-      <div class="d-flex justify-content-between">
+      <div class="d-flex justify-content-between statistics-block">
         <div>
-          <p class="mb-2">12.5%</p>
-          <p class="mb-0">Total Rent Earned</p>
+          <p class="mb-2 statistic-count">12.5%</p>
+          <p class="mb-0 statistic-label">Total Rent Earned</p>
         </div>
-        <i style="rotate: -90deg" class="fi fi-rr-chart-simple-horizontal"></i>
+        <i style="rotate: -90deg" class="fi statistic-icon mb-2 fi-rr-chart-simple-horizontal"></i>
       </div>
-    </div>
   </div>
 </template>
 

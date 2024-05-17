@@ -1,4 +1,182 @@
 .portfolio {
   padding-bottom: 56px;
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
+  max-width: 1170px;
+  font-family: SF Pro Display;
+
+  .statistics-block {
+    border-radius: 13px;
+    background: #F1F2F6;
+    padding: 23px 32px;
+    width: 270px;
+    align-items: center;
+
+    .statistic-count {
+      font-size: 24px;
+      font-weight: 800;
+      line-height: 28.64px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #171719;
+    }
+
+    .statistic-label {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.09px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #6B7688;
+    }
+
+    .statistic-icon {
+      font-size: 33px;
+      height: 40px;
+      color: #6B7688;
+    }
+  }
+
+  .graphics-section {
+    margin-top: 32px;
+
+    .circle-graphic {
+      padding: 24px;
+      border: 1px solid #D0D9E5;
+      border-radius: 13px;
+      width: 570px;
+      height: 357px;
+      background-image: url("/src/assets/images/graphics/circle.png");
+      background-size: 60%;
+      background-repeat: no-repeat;
+      background-position: 100px 40px;
+    }
+
+    .map-location {
+      padding: 24px;
+      border: 1px solid #D0D9E5;
+      border-radius: 13px;
+      width: 570px;
+      height: 357px;
+      background-image: url("/src/assets/images/graphics/map.png");
+      background-size: 455px 261px;
+      background-repeat: no-repeat;
+      background-position: 115px 70px;
+    }
+
+    .graphic-name {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 23.87px;
+      letter-spacing: 0.015em;
+      text-align: left;
+      color: #171719;
+    }
+
+    .country-item {
+      gap: 8%;
+      max-width: 140px;
+
+      .country-name {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.09px;
+        letter-spacing: 0.015em;
+        color: #171719;
+        margin-bottom: 12px;
+      }
+
+      .country-count {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.09px;
+        letter-spacing: 0.015em;
+        color: #6B7688;
+        margin-bottom: 12px;
+      }
+    }
+
+    .scale {
+      width: 120px;
+      height: 6px;
+      border-radius: 13px;
+      background: #EEF5FF;
+      margin-bottom: 16px;
+
+      &__value {
+        height: 6px;
+        border-radius: 13px;
+        background: #257CFF;
+      }
+    }
+
+  }
+
+  .portfolio-list {
+    margin-top: 32px;
+
+    &__grid {
+      .currency-block {
+        padding: 16px;
+        background: #F1F2F6;
+        border-radius: 13px;
+        width: 370px;
+
+        .currency-name {
+          font-size: 20px;
+          font-weight: 800;
+          line-height: 23.87px;
+          letter-spacing: 0.015em;
+          text-align: left;
+          color: #171719;
+        }
+
+        .currency-value {
+          font-size: 20px;
+          font-weight: 500;
+          line-height: 23.87px;
+          letter-spacing: 0.015em;
+          text-align: right;
+          color: #171719;
+        }
+
+        .currency-total-value {
+          margin-bottom: 0;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19.09px;
+          letter-spacing: 0.015em;
+          color: #6B7688;
+        }
+      }
+
+      .currency-changes {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: -0.005em;
+        text-align: right;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &.up {
+          color: #81C57C;
+        }
+
+        &.down {
+          color: #F42929;
+        }
+      }
+
+      .properties-section {
+        margin-top: 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 27px;
+        grid-row-gap: 27px;
+      }
+    }
+  }
 }

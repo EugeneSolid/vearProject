@@ -1,9 +1,14 @@
 .header {
-  padding: 56px 135px 39px 135px;
+  padding: 56px 20px 39px 20px;
   background: transparent;
   font-family: 'SF Pro Display';
   z-index: 99;
   position: relative;
+
+  .header-elements {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
 
   &__link {
     font-size: 16px;
@@ -14,6 +19,8 @@
     color: #6B7688;
     padding: 13.5px 25px;
     border-radius: 8px;
+    justify-content: center;
+    margin: 0 6px;
 
     &.home-link {
       color: white;
@@ -26,6 +33,10 @@
         border: none;
         text-shadow: none;
       }
+    }
+
+    &:not(.home-link) {
+      width: 169px;
     }
   }
 

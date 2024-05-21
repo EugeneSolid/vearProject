@@ -1,6 +1,7 @@
 <script>
 export default {
   name: "SwapGraphic",
+  props: ['tokenFrom', 'tokenTo'],
   data() {
     return {
       periods: ['1D', '1W', '1M', '1Y'],
@@ -18,13 +19,13 @@ export default {
       <div>
         <div class="d-flex gap-2 mb-3 align-items-center">
           <div>
-            <img class="from-currency-img" src="/vearProject/images/currencies/usdt.svg">
-            <img class="to-currency-img" src="/vearProject/images/currencies/le.svg">
+            <img class="from-currency-img" :src="tokenFrom.icon">
+            <img class="to-currency-img" :src="tokenTo.icon">
           </div>
           <div class="d-flex gap-2 align-items-center">
-            <p class="mb-0 currency-name">USDT</p>
+            <p class="mb-0 currency-name">{{tokenFrom.name}}</p>
             <i class="fi fi-rr-exchange swap-icon"></i>
-            <p class="mb-0 currency-name">LE10001</p>
+            <p class="mb-0 currency-name">{{tokenTo.name}}</p>
           </div>
         </div>
         <div class="mb-2 graphic-price d-flex gap-3 align-items-center">

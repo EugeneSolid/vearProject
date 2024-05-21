@@ -7,7 +7,7 @@ import TokenSelectorModal from "@/components/swap/modals/TokenSelectorModal.vue"
 export default {
   name: "SwapBlock",
   components: {TokenSelectorModal, TransactionSettingsModal, HistoryModal, ConnectWalletModal},
-  emits: ['showGraph'],
+  emits: ['showGraph', 'selectToken'],
   data() {
     return {
       priceFrom: '',
@@ -58,9 +58,11 @@ export default {
       switch (type) {
         case 'from':
           this.selectedFromToken = data
+            this.$emit('selectToken', data, 'from')
           break;
         case 'to':
           this.selectedToToken = data
+          this.$emit('selectToken', data, 'to')
           break
       }
     }

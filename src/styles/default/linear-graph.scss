@@ -1,0 +1,116 @@
+.linear-graphic {
+  padding: 24px;
+  border: 1px solid #D0D9E5;
+  border-radius: 13px;
+  width: 100%;
+  margin-bottom: 32px;
+  height: 430px;
+  background-image: url("/public/images/graphics/linear.svg");
+  background-repeat: no-repeat;
+  background-position: -1px 140px;
+  font-family: SF Pro Display;
+
+  .graphic-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23.87px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    color: #6B7688;
+    margin-bottom: 11px;
+  }
+
+  .graphic-value {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.19px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    color: #171719;
+  }
+
+  .graphic-date {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.71px;
+    letter-spacing: 0.015em;
+    text-align: left;
+    color: #257CFF;
+  }
+
+  .graphic-price {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28.64px;
+    letter-spacing: 0.015em;
+    color: #171719;
+  }
+
+  .graphic-period {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 40px;
+    padding: 10.5px 0;
+    border-radius: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.09px;
+    letter-spacing: 0.015em;
+    text-align: center;
+    background: #F1F2F6;
+    color: #6B7688;
+    transition: background .3s, color .3s;
+    cursor: pointer;
+
+
+    &.selected {
+      background: #257CFF;
+      color: white;
+      font-weight: 600;
+    }
+  }
+}
+
+.graphic-grade {
+  bottom: 32px;
+  width: calc(1170px - 16px);
+  margin-left: -16px;
+
+  .prices {
+    padding: 0 16px;
+  }
+
+  &__value {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.32px;
+    color: #454459;
+    opacity: .5;
+  }
+
+  .graphic-month {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.32px;
+    text-align: center;
+    opacity: .5;
+    color: #454459;
+    border-radius: 20px;
+    padding: 8px 0;
+    width: 52px;
+    cursor: pointer;
+    transition: background .3s, color .3s, box-shadow .3s, opacity .3s;
+
+
+    &.selected {
+      background: #257CFF;
+      box-shadow: 0px 5px 25px 0px #0000001A;
+      color: white;
+      font-weight: 600;
+      opacity: 1;
+    }
+  }
+}

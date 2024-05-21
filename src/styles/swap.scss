@@ -1,7 +1,7 @@
 .swap {
   max-width: 1170px;
   margin: 0 auto;
-  padding: 50px 0 56px 0;
+  padding: 10px 0 56px 0;
   font-family: SF Pro Display;
 
   .swap-block {
@@ -10,6 +10,7 @@
     border-radius: 18px;
     background: #F1F2F6;
     padding: 24px;
+    flex: 0 0 370px;
 
     &__title {
       font-size: 20px;
@@ -21,13 +22,120 @@
     }
 
     &__icon {
+      display: block;
       font-size: 20px;
       height: 20px;
       color: #6B7688;
+      cursor: pointer;
+    }
+
+    .currency-img {
+      width: 16px;
+      height: 16px;
+    }
+
+    .open-graph-btn {
+      padding: 3px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      height: 21px;
+      width: 21px;
+      margin-top: 1px;
+      border: 2px solid #6B7688;
+      cursor: pointer;
+
+      .swap-block__icon {
+        font-size: 9px;
+        height: 9px;
+        rotate: -90deg;
+      }
+
+      &.active {
+        background: #257CFF;
+        border-color: #257CFF;
+
+
+        .swap-block__icon {
+          color: white;
+        }
+      }
     }
 
     .currency-selector {
       background: #F1F2F6;
+      border-radius: 13px;
+      padding: 12px 12px;
+      z-index: 99;
+      top: 16px;
+      right: 16px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.71px;
+      letter-spacing: 0.015em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #9BA6B7;
+      cursor: pointer;
+
+      i {
+        font-size: 15px;
+        height: 15px;
+      }
+    }
+
+    .swap-icon {
+      rotate: -90deg;
+      font-size: 14px;
+      z-index: 99;
+      color: #6B7688;
+      top: 62px;
+      right: 145px;
+      padding: 10px 11px;
+      border-radius: 100px;
+      background: #F1F2F6;
+      border: 2px solid #FFFFFF;
+      width: 40px;
+      height: 40px;
+    }
+
+    .transaction-fee {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 23.87px;
+      letter-spacing: 0.015em;
+      color: #7B7B7B;
+
+      &-percent {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 23.87px;
+        letter-spacing: 0.015em;
+        color: #171719;
+      }
+
+      &-label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.71px;
+        letter-spacing: 0.015em;
+        color: #171719;
+      }
+    }
+
+    .connect-wallet-btn {
+      margin-top: 12px;
+      background: #257CFF;
+      border-radius: 13px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 19.09px;
+      letter-spacing: 0.015em;
+      text-align: center;
+      padding: 18.5px 0;
+      color: #FFFFFF;
+      border: none;
     }
 
     &__input {
@@ -45,6 +153,424 @@
       &::placeholder {
         color: #9BA6B7;
       }
+    }
+  }
+
+  &__header {
+    background: #F1F2F6;
+    border-radius: 13px;
+    display: flex;
+    width: 475px;
+    margin: 0 auto 32px auto;
+    padding: 12px;
+    gap: 8px;
+
+    .lidq-balance {
+      background: #FFFFFF;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.09px;
+      letter-spacing: 0.015em;
+      color: #257CFF;
+      border-radius: 13px;
+      padding: 4px 0 4px 11px;
+      width: 108px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      svg {
+        width: 32px;
+        height: 32px;
+        padding: 4px;
+      }
+    }
+
+    .buy-btn, .connect-wallet-btn {
+      background: #000000;
+      color: white;
+      border-radius: 13px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.09px;
+      letter-spacing: 0.015em;
+      text-align: center;
+      padding: 8.1px 0;
+      width: 139.5px;
+      border: none;
+    }
+
+    .connect-wallet-btn {
+      background: #257CFF;
+    }
+
+    .actions-dropdown {
+      .open-actions-btn {
+        background: #DADDE8;
+        border-radius: 13px;
+        border: none;
+        padding: 9px 0;
+        width: 40px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i {
+          font-size: 18px;
+          height: 22px;
+        }
+      }
+
+      .dropdown-menu {
+        padding: 8px;
+        background: #F1F2F6;
+        border-radius: 13px;
+        width: 240px;
+        min-width: unset;
+        border: none;
+        margin-top: 20px !important;
+
+        .dropdown-action {
+          padding: 9.5px 16px;
+          color: #6B7688;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19.09px;
+          letter-spacing: 0.015em;
+          border-radius: 13px;
+          text-decoration: none;
+          cursor: pointer;
+          transition: background .3s, color .3s;
+
+          i {
+            font-size: 18px;
+          }
+
+          a {
+            text-decoration: none;
+            color: #6B7688;
+          }
+
+          &:hover {
+            background: #FFFFFF;
+            color: #257CFF;
+            font-weight: 600;
+
+            a {
+              color: #257CFF;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .swap-section {
+    gap: 30px;
+
+    .linear-graphic {
+      height: 400px;
+      background-image: url("/public/images/graphics/linear_swap.svg");
+      background-repeat: no-repeat;
+      background-position: -1px 140px;
+
+      .swap-icon {
+        color: #6B7688;
+        font-size: 14px;
+        height: 16px;
+      }
+    }
+
+    .graphic-grade {
+      width: calc(770px - 16px);
+      bottom: 24px;
+    }
+
+    .from-currency-img {
+      width: 32px;
+      height: 32px;
+      border: 1px solid #FFFFFF;
+      z-index: 99;
+      border-radius: 100px;
+      position: relative;
+    }
+
+    .to-currency-img {
+      margin-left: -16.5px;
+      z-index: 9;
+      position: relative;
+    }
+
+    .currency-name {
+      color: #6B7688;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.09px;
+      letter-spacing: 0.015em;
+    }
+  }
+}
+
+.swap-modal {
+  font-family: SF Pro Display;
+
+  &#connectWalletModal, &#accountWalletModal {
+    .modal-dialog {
+      max-width: 440px;
+
+      .modal-content {
+        width: 440px;
+      }
+    }
+  }
+
+  &#historyModal, &#transactionSettingsModal, &#tokenSelectorModalTo, &#tokenSelectorModalFrom {
+    .modal-dialog {
+      max-width: 370px;
+
+      .modal-content {
+        width: 370px;
+      }
+    }
+  }
+
+  .modal-dialog {
+
+    .modal-title {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 23.87px;
+      letter-spacing: 0.015em;
+      color: #171719;
+      text-align: center;
+    }
+
+    .modal-header {
+      height: 24px;
+    }
+
+    .modal-content {
+      box-shadow: 0px 24px 16px -10px #00000014;
+      background: #F1F2F6;
+      border-radius: 18px;
+
+      .btn-close {
+        margin-top: 16px;
+        padding: 16px 16px 0 0 !important;
+        z-index: 999;
+      }
+
+      .modal-body {
+        padding: 24px;
+
+        .wallet-item {
+          width: 120px !important;
+          height: 120px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19.09px;
+          letter-spacing: 0.015em;
+          color: #171719;
+          background: #FFFFFF;
+          border-radius: 13px;
+          cursor: pointer;
+          border: 1px solid white;
+
+          &:hover {
+            border-color: #CFD9E5;
+            color: #257CFF;
+          }
+        }
+
+        .file-img {
+          width: 100px;
+          height: 100px;
+          scale: 1.5;
+          margin-left: 10px;
+          object-fit: fill;
+        }
+
+        .item-hint {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.09px;
+          letter-spacing: 0.015em;
+          color: #6B7688;
+        }
+
+        .connect-wallet-btn {
+          background: #257CFF;
+          border-radius: 13px;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 19.09px;
+          letter-spacing: 0.015em;
+          color: white;
+          border: none;
+          padding: 18.5px 0;
+
+          &.auto-btn {
+            flex:  0 0 96px;
+          }
+        }
+
+        .item-input {
+          padding: 16px;
+          border-radius: 13px;
+          background: #FFFFFF;
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 23.87px;
+          letter-spacing: 0.015em;
+          color: #171719;
+          border: none;
+
+          &.tolerance {
+            padding-right: 45px;
+          }
+
+          &.deadline {
+            padding-right: 80px;
+          }
+
+          &::placeholder {
+            color: #9BA6B7;
+          }
+        }
+
+        .input-icon {
+          font-size: 20px;
+          height: 20px;
+          color: #257CFF;
+          top: 15px;
+          right: 16px;
+
+          &.gray {
+            top: 16px;
+            color: #9BA6B7;
+          }
+        }
+
+        .recent-pick-item {
+          background: #FFFFFF;
+          border-radius: 8px;
+          padding: 8px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.71px;
+          letter-spacing: 0.015em;
+          color: #6B7688;
+          width: 79px;
+          cursor: pointer;
+
+          img {
+            height: 16px;
+            width: 16px;
+          }
+        }
+
+        .list-pick-item {
+          background: #FFFFFF;
+          border-radius: 13px;
+          padding: 12px;
+          cursor: pointer;
+
+          &:not(:last-child) {
+            margin-bottom: 8px;
+          }
+
+          .item-icon {
+            height: 32px;
+            width: 32px;
+          }
+        }
+
+        .item-small-text {
+          font-size: 12px;
+          font-weight: 400;
+          line-height: 14.32px;
+          letter-spacing: 0.015em;
+          color: #6B7688;
+        }
+
+        .delimiter {
+          margin: 16px 0;
+          border-top: 1px solid #D7DEE9;
+          opacity: 1;
+        }
+
+        .input-text {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19.09px;
+          letter-spacing: 0.015em;
+          text-align: right;
+          color: #6B7688;
+          top: 17px;
+          right: 16px;
+        }
+
+        .account-item {
+          padding: 10px 10px 15px 16px;
+          border-radius: 13px;
+          background: white;
+        }
+
+        .item-title {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16.71px;
+          letter-spacing: 0.015em;
+          color: #6B7688;
+        }
+
+        .item-value {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 23.87px;
+          letter-spacing: 0.015em;
+          color: #171719;
+        }
+
+        .warning-button {
+          background: #FFEEEE;
+          border-radius: 13px;
+          padding: 4px 0;
+          text-align: center;
+          width: 96px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.71px;
+          letter-spacing: 0.015em;
+          color: #E13340;
+          cursor: pointer;
+        }
+
+        .change-btn {
+          background: #EEF5FF;
+          border-radius: 13px;
+          padding: 4px 0;
+          text-align: center;
+          width: 72px;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 16.71px;
+          letter-spacing: 0.015em;
+          color: #257CFF;
+          cursor: pointer;
+
+          &:hover {
+            background: #257CFF;
+            color: #FFFFFF;
+          }
+        }
+      }
+
     }
   }
 }

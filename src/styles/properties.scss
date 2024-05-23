@@ -483,13 +483,13 @@
     &-icon {
       top: -10px;
       left: -45px;
-      font-size: 24px;
+      font-size: 26px;
       display: block;
       border: 1px solid #ffffff;
       background: white;
       border-radius: 100%;
-      height: 31px;
-      padding: 0 2.5px;
+      height: 33px;
+      padding: 0px 1.7px 3px;
       width: 31px;
       color: #CFD9E5;
 
@@ -511,13 +511,13 @@
       &.first {
         width: 55px;
         top: 30px;
-        left: -57px;
+        left: -56px;
       }
 
       &.second {
         width: 375px;
         top: 180px;
-        left: -217px;
+        left: -216px;
       }
     }
   }

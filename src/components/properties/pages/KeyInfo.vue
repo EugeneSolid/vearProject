@@ -82,7 +82,7 @@ export default {
       </div>
     </div>
     <div>
-      <p class="section-title about-property">About The Property</p>
+      <p class="info-section-title about-property">About The Property</p>
       <p class="property-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
         incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -91,7 +91,7 @@ export default {
         laborum.</p>
     </div>
     <div>
-      <p class="mb-3 section-title">Location</p>
+      <p class="mb-3 info-section-title">Location</p>
       <img style="width: 770px;" src="/vearProject/images/properties/property-map.png">
     </div>
   </div>

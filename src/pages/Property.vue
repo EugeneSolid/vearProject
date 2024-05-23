@@ -75,7 +75,7 @@ export default {
     </div>
   </div>
   <div style="gap: 30px" class="d-flex top-part-section">
-    <PropertyGallery/>
+    <PropertyGallery :property="property"/>
     <InvestSection :property="property"/>
   </div>
   <PropertyInfo :property="property"/>

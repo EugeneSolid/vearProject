@@ -21,7 +21,7 @@ export default {
 
 <template>
   <div class="invest-section">
-    <p class="mb-3 d-flex justify-content-between align-items-center section-title bold">Total Investment:
+    <p class="mt-0 mb-3 d-flex justify-content-between align-items-center section-title bold">Total Investment:
       <span class="section-value bold mt-2">{{ property.total }}</span></p>
     <p class="mb-3 d-flex justify-content-between align-items-center section-title">Token Price:
       <span class="section-value">$1</span></p>

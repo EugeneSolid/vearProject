@@ -1,7 +1,13 @@
 <script>
+import router from "@/router/router";
 export default {
   name: "PropertyItem",
-  props: ['property']
+  props: ['property'],
+  methods: {
+    openProperty() {
+      router.push(`/property/${this.property.number.toLowerCase()}`)
+    }
+  }
 }
 </script>
 
@@ -18,7 +24,7 @@ export default {
       <div>
         <p class="mb-1 property-title">{{property.number}}</p>
         <p class="mb-0 property-title">{{property.name}}</p>
-        <p class="mb-0 property-address"><i class="fi fi-ss-marker"></i>{{property.address}}</p>
+        <p class="mb-2 property-address"><i class="fi fi-ss-marker"></i>{{property.address}}</p>
       </div>
       <hr/>
       <div>
@@ -39,7 +45,7 @@ export default {
           <p class="mb-0 other-price__value">{{property.income}}</p>
         </div>
       </div>
-      <button class="w-100 text-center view-property-btn">
+      <button class="w-100 text-center view-property-btn" @click="openProperty">
         View Details
       </button>
     </div>

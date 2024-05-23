@@ -1,7 +1,14 @@
 <script>
+import router from "@/router/router";
+
 export default {
   name: "PortfolioPropertyItem",
-  props: ['property']
+  props: ['property'],
+  methods: {
+    openProperty() {
+      router.push(`/property/${this.property.number.toLowerCase()}`)
+    }
+  }
 }
 </script>
 
@@ -41,7 +48,7 @@ export default {
           <p class="mb-0 total-price__value">{{property.income}}</p>
         </div>
       </div>
-      <button class="w-100 text-center view-property-btn">
+      <button class="w-100 text-center view-property-btn" @click="openProperty">
         View Details
       </button>
     </div>

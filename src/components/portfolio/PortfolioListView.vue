@@ -1,6 +1,13 @@
 <script>
+import router from "@/router/router";
+
 export default {
-  name: "PortfolioListView"
+  name: "PortfolioListView",
+  methods: {
+    openProperty(number) {
+      router.push(`/property/${number.toLowerCase()}`)
+    }
+  }
 }
 </script>
 
@@ -78,7 +85,7 @@ export default {
       <td class="table-data">$3.000</td>
       <td class="table-data">$834</td>
       <td class="table-data">13.5%</td>
-      <td> <button class="claim-btn">
+      <td> <button class="claim-btn" @click="openProperty('LE0001')">
         View Details
       </button></td>
     </tr>
@@ -93,7 +100,7 @@ export default {
       <td class="table-data">$3.000</td>
       <td class="table-data">$834</td>
       <td class="table-data">13.5%</td>
-      <td> <button class="claim-btn">
+      <td> <button class="claim-btn" @click="openProperty('LE0002')">
         View Details
       </button></td>
     </tr>
@@ -105,7 +112,7 @@ export default {
       <td class="table-data">$3.000</td>
       <td class="table-data">$834</td>
       <td class="table-data">13.5%</td>
-      <td> <button class="claim-btn">
+      <td> <button class="claim-btn" @click="openProperty('LE0003')">
         View Details
       </button></td>
     </tr>

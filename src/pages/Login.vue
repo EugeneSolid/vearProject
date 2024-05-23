@@ -24,7 +24,7 @@ export default {
       if(this.name.length > 0 && this.password.length > 0) {
         this.error = false
         localStorage.setItem('user', 'true')
-        router.push('/marketplace')
+        router.go(-1)
       }
       else {
         this.error = true

@@ -1,6 +1,7 @@
 <script>
 import VueSlider from 'vue-3-slider-component'
 import TermsModal from "@/components/properties/TermsModal.vue";
+import NotificationModal from "@/components/properties/NotificationModal.vue";
 export default {
   name: "InvestSection",
   props: ['property'],
@@ -10,6 +11,7 @@ export default {
     }
   },
   components: {
+    NotificationModal,
     TermsModal,
     VueSlider
   },
@@ -41,13 +43,19 @@ export default {
         <p class="mb-0 range-result-value text-end">${{(myNumber*0.01).toFixed(2)}}</p>
       </div>
     </div>
-    <button class="w-100 mb-3 invest-btn" data-bs-target="#TermsModal" data-bs-toggle="modal">
+    <button v-if="property.number === 'LE0001'"
+            class="w-100 mb-3 invest-btn" data-bs-target="#TermsModal" data-bs-toggle="modal">
+      Invest Now
+    </button>
+    <button v-else
+            class="w-100 mb-3 invest-btn" data-bs-target="#notifyModal" data-bs-toggle="modal">
       Invest Now
     </button>
     <p class="text-center mb-2 range-hint">Minimum 10</p>
     <p class="text-center mb-0 range-hint">Maximum 45000</p>
   </div>
   <TermsModal :property="property"/>
+  <NotificationModal/>
 </template>
 
 <style scoped>

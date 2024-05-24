@@ -36,6 +36,6 @@ export default {
 
 <style scoped>
   .info-button {
-    padding: 16px;
+    padding: 16px !important;
   }
 </style>

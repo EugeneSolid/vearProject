@@ -35,5 +35,7 @@ export default {
 </template>
 
 <style scoped>
-
+  .info-button {
+    padding: 16px;
+  }
 </style>

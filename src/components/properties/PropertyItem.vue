@@ -28,19 +28,19 @@ export default {
       </div>
       <hr/>
       <div>
-        <div class="d-flex justify-content-between w-100 total-price">
+        <div class="d-flex justify-content-between align-items-center w-100 total-price">
           <p class="mb-0 total-price__label">Total Investment</p>
           <p class="mb-0 total-price__value">{{property.total}}</p>
         </div>
-        <div class="d-flex justify-content-between w-100 other-price">
+        <div class="d-flex justify-content-between align-items-center w-100 other-price">
           <p class="mb-0 other-price__label">Token Price</p>
           <p class="mb-0 other-price__value">$1</p>
         </div>
-        <div class="d-flex justify-content-between w-100 other-price">
+        <div class="d-flex justify-content-between w-100 align-items-center other-price">
           <p class="mb-0 other-price__label">Net Monthly Rent</p>
           <p class="mb-0 other-price__value">{{property.rent}}</p>
         </div>
-        <div class="d-flex justify-content-between w-100 other-price">
+        <div class="d-flex justify-content-between w-100 align-items-center other-price">
           <p class="mb-0 other-price__label">Expected Income</p>
           <p class="mb-0 other-price__value">{{property.income}}</p>
         </div>

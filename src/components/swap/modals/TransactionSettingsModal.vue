@@ -70,7 +70,7 @@ export default {
                    placeholder="0.10"/>
             <span class="input-text position-absolute">Minutes</span>
           </div>
-          <button class="w-100 connect-wallet-btn">Save Settings</button>
+          <button class="w-100 connect-wallet-btn" data-bs-dismiss="modal">Save Settings</button>
         </div>
       </div>
     </div>

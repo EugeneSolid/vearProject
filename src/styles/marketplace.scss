@@ -12,7 +12,7 @@
   .properties-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: 1fr;
     grid-column-gap: 27px;
     grid-row-gap: 27px;
   }

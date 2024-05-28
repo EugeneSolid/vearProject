@@ -12,23 +12,25 @@ export default {
       properties: [
         {
           image: '/vearProject/images/properties/property-1.png',
-          type: {name: 'Comercial', icon: 'fi fi-ss-building'},
+          type: {name: 'Residential', icon: 'fi fi-ss-house-chimney'},
           name: '1230-1232 Dartmouth St',
           number: 'LE0001',
           address: 'Scranton, PA 18504, USA',
           total: '$231,500',
           income: '9.9%',
-          rent: '$1,905'
+          rent: '$1,905',
+          display: 'new'
         },
         {
           image: '/vearProject/images/properties/property-2.png',
-          type: {name: 'Industrial', icon: 'fi fi-ss-garage-open'},
+          type: {name: 'Residential', icon: 'fi fi-ss-house-chimney'},
           name: '1411-1413 Pine Street',
           number: 'LE0002',
           address: 'Scranton, PA 18510, USA',
           total: '$266,150',
           income: '10.1%',
-          rent: '$2,251'
+          rent: '$2,251',
+          display: 'secondary'
         },
         {
           image: '/vearProject/images/properties/property-3.png',
@@ -38,7 +40,41 @@ export default {
           address: 'Scranton, PA 18504, USA',
           total: '$243,050',
           income: '13.7%',
-          rent: '$2,771'
+          rent: '$2,771',
+          display: 'secondary'
+        },
+        {
+          image: '/vearProject/images/properties/property-4.jpg',
+          type: {name: 'Industrial', icon: 'fi fi-ss-garage-open'},
+          name: 'Stefan Cel Mare 131',
+          number: 'LE0004',
+          address: 'Radauti, Suceava, Romania',
+          total: '$634,500',
+          income: '9.9%',
+          rent: '$6,240',
+          display: 'secondary'
+        },
+        {
+          image: '/vearProject/images/properties/property-5.jpg',
+          type: {name: 'Industrial', icon: 'fi fi-ss-garage-open'},
+          name: 'Gardendale Business Park',
+          number: 'LE0005',
+          address: '707-5709 Gardendale Dr, Houston, TX 77092',
+          total: '$4,299,999',
+          income: '6.84%',
+          rent: '$29,410',
+          display: 'new'
+        },
+        {
+          image: '/vearProject/images/properties/property-6.jpg',
+          type: {name: 'Industrial', icon: 'fi fi-ss-garage-open'},
+          name: 'Texas Storage Facility',
+          number: 'LE0006',
+          address: '1609 Lakeland Dr, Liberty, TX 77575',
+          total: '$553,270',
+          income: '9.85%',
+          rent: '$5,530',
+          display: 'new'
         },
       ]
     }

@@ -19,6 +19,7 @@ export default {
         <p class="mb-0">{{property.type.name}}</p>
       </div>
       <img class="property-photo" :src="property.image"/>
+      <img class="sold-out-img" v-if="property.number === 'LE0001'" src="/vearProject/images/sold-out.png">
     </div>
     <div class="info-section">
       <div>
@@ -53,5 +54,15 @@ export default {
 </template>
 
 <style scoped>
+.sold-out-img {
+  position: absolute;
+  z-index: 9;
+  left:0;
+  height: 185px;
+  width: 100%;
+  object-fit: contain;
 
+  background-color: rgba(238, 238, 238, 0.5);
+
+}
 </style>

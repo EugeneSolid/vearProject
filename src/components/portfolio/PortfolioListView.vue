@@ -29,9 +29,9 @@ export default {
         <img class="table-property-img bigger" src="/vearProject/images/currencies/lidq.svg"/>
         LIQD
       </td>
-      <td class="table-data">20.000</td>
+      <td class="table-data">20,000</td>
       <td class="table-data ps-2">$1.1</td>
-      <td class="table-data">$22.000</td>
+      <td class="table-data">$22,000</td>
       <td class="table-data">-</td>
       <td class="table-data">-</td>
       <td>
@@ -46,7 +46,7 @@ export default {
         <img class="table-property-img bigger" src="/vearProject/images/currencies/usdc.svg"/>
         USDC
       </td>
-      <td class="table-data">8.000</td>
+      <td class="table-data">8,000</td>
       <td class="table-data ps-2">$1</td>
       <td class="table-data">$800</td>
       <td class="table-data">-</td>
@@ -63,9 +63,9 @@ export default {
         <img  class="table-property-img " src="/vearProject/images/currencies/usdt.svg"/>
         USDT
       </td>
-      <td class="table-data">3.000</td>
+      <td class="table-data">3,000</td>
       <td class="table-data ps-2">$1</td>
-      <td class="table-data">$3.000</td>
+      <td class="table-data">$3,000</td>
       <td class="table-data">-</td>
       <td class="table-data">-</td>
       <td>
@@ -78,11 +78,11 @@ export default {
     <tr class="table-row">
       <td class="table-text bold"><img class="table-property-img property" src="/vearProject/images/properties/property-1.png">LE0001</td>
       <td style="height: 96px" class="pe-0 table-data d-flex align-items-center justify-content-between">
-        3.000
+        3,000
         <span class="currency-changes up gap-1"><i class="fi fi-sr-caret-up"></i>28%</span>
       </td>
       <td class="table-data ps-2">$1</td>
-      <td class="table-data">$3.000</td>
+      <td class="table-data">$3,000</td>
       <td class="table-data">$834</td>
       <td class="table-data">13.5%</td>
       <td> <button class="claim-btn" @click="openProperty('LE0001')">
@@ -93,11 +93,11 @@ export default {
     <tr class="table-row">
       <td class="table-text bold"><img class="table-property-img property" src="/vearProject/images/properties/property-2.png">LE0002</td>
       <td style="height: 96px" class="pe-0 table-data d-flex align-items-center justify-content-between">
-        3.000
-        <span class="currency-changes down gap-1"><i class="fi fi-sr-caret-down"></i>-14.5%</span>
+        3,000
+        <span class="currency-changes down gap-1"><i class="fi fi-sr-caret-down"></i>14.5%</span>
       </td>
       <td class="table-data ps-2">$1</td>
-      <td class="table-data">$3.000</td>
+      <td class="table-data">$3,000</td>
       <td class="table-data">$834</td>
       <td class="table-data">13.5%</td>
       <td> <button class="claim-btn" @click="openProperty('LE0002')">
@@ -107,9 +107,9 @@ export default {
     <tr class="separator header"/>
     <tr class="table-row">
       <td class="table-text bold"><img class="table-property-img property" src="/vearProject/images/properties/property-3.png">LE0003</td>
-      <td class="table-data">3.000</td>
+      <td class="table-data">3,000</td>
       <td class="table-data ps-2">$1</td>
-      <td class="table-data">$3.000</td>
+      <td class="table-data">$3,000</td>
       <td class="table-data">$834</td>
       <td class="table-data">13.5%</td>
       <td> <button class="claim-btn" @click="openProperty('LE0003')">

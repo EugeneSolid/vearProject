@@ -3,7 +3,7 @@ export default {
   name: "ProfileSettings",
   data() {
     return {
-      displayName: 'Micheal-Antonio'
+      displayName: 'Michael-Antonio'
     }
   }
 }
@@ -17,7 +17,7 @@ export default {
         <div class="d-flex profile-name-info">
           <div class="d-flex flex-column w-100">
             <label class="section-label">First Name <span class="error">*</span></label>
-            <p class="section-field disabled">Micheal</p>
+            <p class="section-field disabled">Michael</p>
           </div>
           <div class="d-flex flex-column w-100">
             <label class="section-label">Last Name <span class="error">*</span></label>
@@ -58,8 +58,8 @@ export default {
     <div class="d-flex justify-content-between resident-question align-items-center">
       <p class="profile-page__info-text mb-0">Are you a resident or cetizen of the united states or It’s Territories? <span class="error">*</span></p>
       <div class="d-flex gap-2">
-        <button class="resident-question__button active">Yes</button>
-        <button class="resident-question__button">No</button>
+        <button class="resident-question__button">Yes</button>
+        <button class="resident-question__button active">No</button>
       </div>
     </div>
   </div>

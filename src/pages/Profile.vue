@@ -17,7 +17,7 @@ export default {
           <img class="profile-img" src="/vearProject/images/header/profile.jpeg">
           <i class="fi fi-ss-circle-camera camera-icon position-absolute bottom-0"></i>
         </div>
-        <p class="mb-0 profile-name">Micheal Antonio</p>
+        <p class="mb-0 profile-name">Michael Antonio</p>
       </div>
       <div class="d-flex gap-4 mt-5 profile-content">
         <ProfileSidebar/>

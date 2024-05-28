@@ -40,7 +40,7 @@ export default {
         </router-link>
         <router-link v-else class="profile-btn" to="/profile">
           <img class="profile-img" src="/vearProject/images/header/profile.jpeg"/>
-          Micheal Antonio
+          Michael Antonio
         </router-link>
       </div>
     </div>

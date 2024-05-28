@@ -41,8 +41,8 @@ export default {
       </div>
       <div v-if="this.$route.path === '/'">
         <a target="_blank" class="header__button" href="https://bit.ly/LEpaper">
-          <i class="fi fi-rr-document"></i>
-          Whitepaper
+          <img class="button-img" src="/vearProject/images/currencies/lidq.svg">
+          App Demo
         </a>
       </div>
       <div v-else>
@@ -52,7 +52,7 @@ export default {
         </router-link>
         <router-link v-else class="profile-btn" to="/profile">
           <img class="profile-img" src="/vearProject/images/header/profile.jpeg"/>
-          Micheal Antonio
+          Michael Antonio
         </router-link>
       </div>
     </div>
@@ -60,5 +60,7 @@ export default {
 </template>
 
 <style scoped>
-
+.button-img {
+  width: 24px;
+}
 </style>

@@ -15,14 +15,14 @@ export default {
       </div>
       <div class="d-flex justify-content-between statistics-block">
         <div>
-          <p class="mb-2 statistic-count">$107.000</p>
+          <p class="mb-2 statistic-count">$107,000</p>
           <p class="mb-0 statistic-label">Properties Value</p>
         </div>
         <i class="fi statistic-icon fi-rr-usd-circle"></i>
       </div>
       <div class="d-flex justify-content-between statistics-block">
         <div>
-          <p class="mb-2 statistic-count">$12.000</p>
+          <p class="mb-2 statistic-count">$12,000</p>
           <p class="mb-0 statistic-label">Total Rent Earned</p>
         </div>
         <i class="fi statistic-icon fi-rr-money-bills"></i>

@@ -10,7 +10,7 @@ export default {
       properties: [
         {
           image: '/vearProject/images/properties/property-1.png',
-          type: {name: 'Comercial', icon: 'fi fi-ss-building'},
+          type: {name: 'Residential', icon: 'fi fi-ss-house-chimney'},
           name: '1230-1232 Dartmouth St',
           number: 'LE0001',
           address: 'Scranton, PA 18504, USA',
@@ -20,7 +20,7 @@ export default {
         },
         {
           image: '/vearProject/images/properties/property-2.png',
-          type: {name: 'Industrial', icon: 'fi fi-ss-garage-open'},
+          type: {name: 'Residential', icon: 'fi fi-ss-house-chimney'},
           name: '1411-1413 Pine Street',
           number: 'LE0002',
           address: 'Scranton, PA 18510, USA',

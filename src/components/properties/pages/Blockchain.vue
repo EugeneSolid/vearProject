@@ -10,7 +10,7 @@ export default {
       <div class="d-flex flex-column gap-3">
         <div class="d-flex justify-content-between property-info-block">
           <p class="mb-0 property-info-block__title">Total Tokens</p>
-          <p class="text-end mb-0 property-info-block__value">250.000</p>
+          <p class="text-end mb-0 property-info-block__value">250,000</p>
         </div>
         <div class="d-flex justify-content-between property-info-block">
           <p class="mb-0 property-info-block__title">Minimum Purchase</p>

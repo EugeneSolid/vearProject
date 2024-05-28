@@ -2,6 +2,7 @@
 export default {
   name: "OrderInfo",
   props: ['total'],
+  emits: ['verify'],
   data() {
     return {
       isPaymentSelect: false
@@ -29,7 +30,7 @@ export default {
       </div>
     </div>
     <p class="mb-3 order-info__hint text-center">Tokens sent immediately </p>
-    <button class="w-100 apply-btn">Make Payment</button>
+    <button class="w-100 apply-btn" @click="$emit('verify')">Make Payment</button>
   </div>
 </template>
 

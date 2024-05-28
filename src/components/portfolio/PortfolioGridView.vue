@@ -82,10 +82,10 @@ export default {
       <div class="w-100">
         <div class="d-flex justify-content-between w-100">
           <p class="mb-2 currency-name">USDC</p>
-          <p class="mb-2 currency-value">11.000 USD</p>
+          <p class="mb-2 currency-value">11,000 USD</p>
         </div>
         <div class="d-flex justify-content-between w-100">
-          <p class="currency-total-value">11.000 USDC</p>
+          <p class="currency-total-value">11,000 USDC</p>
           <p class="currency-changes up"><i class="fi fi-sr-caret-up"></i>28%</p>
         </div>
       </div>
@@ -95,10 +95,10 @@ export default {
       <div class="w-100">
       <div class="d-flex justify-content-between w-100">
         <p class="mb-2 currency-name">USDT</p>
-        <p class="mb-2 currency-value">5.000 USD</p>
+        <p class="mb-2 currency-value">5,000 USD</p>
       </div>
       <div class="d-flex justify-content-between w-100">
-        <p class="currency-total-value">11.000 USDT</p>
+        <p class="currency-total-value">11,000 USDT</p>
         <p class="currency-changes down"><i class="fi fi-sr-caret-down"></i>-14.5%</p>
       </div>
       </div>
@@ -108,7 +108,7 @@ export default {
       <div class="w-100">
         <div class="d-flex justify-content-between w-100">
           <p class="mb-2 currency-name">LIDQ</p>
-          <p class="mb-2 currency-value">9.000 USD</p>
+          <p class="mb-2 currency-value">9,000 USD</p>
         </div>
         <div class="d-flex justify-content-between w-100">
           <p class="currency-total-value">85000 LIDQ</p>

@@ -1,18 +1,22 @@
 <script>
 import TokensCount from "@/components/invest-summary/TokensCount.vue";
 import OrderInfo from "@/components/invest-summary/OrderInfo.vue";
+import NotificationModal from "@/components/properties/NotificationModal.vue";
 
 export default {
   name: "InvestmentSummary",
-  components: {OrderInfo, TokensCount},
+  components: {NotificationModal, OrderInfo, TokensCount},
   data() {
     return {
       total: 10,
-      selectedProperty: null
+      selectedProperty: null,
+      error: false,
+      modal: null
     }
   },
   mounted() {
-    this.selectedProperty = JSON.parse(localStorage.getItem('property'))
+    this.selectedProperty = JSON.parse(localStorage.getItem('property'));
+    this.modal = new bootstrap.Modal('#notifyModal', {})
   },
   methods: {
     isUserAuthorized() {
@@ -20,6 +24,15 @@ export default {
     },
     changeCount(value) {
       this.total = value
+    },
+    verify() {
+      if (this.total < 10 || this.total > 45000) {
+        this.error = true;
+      }
+      else {
+        this.error = false;
+        this.modal.show()
+      }
     }
   }
 }
@@ -46,10 +59,11 @@ export default {
     </div>
     <h2 class="title text-start">Investment Summary</h2>
     <div class="d-flex summary-content">
-      <TokensCount @changeCount="changeCount"/>
-      <OrderInfo :total="total"/>
+      <TokensCount @changeCount="changeCount" :error="error"/>
+      <OrderInfo :total="total" @verify="verify"/>
     </div>
   </div>
+  <NotificationModal/>
 </template>
 
 <style scoped>

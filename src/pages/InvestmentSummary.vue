@@ -11,12 +11,10 @@ export default {
       total: 10,
       selectedProperty: null,
       error: false,
-      modal: null
     }
   },
   mounted() {
     this.selectedProperty = JSON.parse(localStorage.getItem('property'));
-    this.modal = new bootstrap.Modal('#notifyModal', {})
   },
   methods: {
     isUserAuthorized() {
@@ -31,7 +29,7 @@ export default {
       }
       else {
         this.error = false;
-        this.modal.show()
+        document.querySelector('.toggle-modal').click()
       }
     }
   }
@@ -63,6 +61,7 @@ export default {
       <OrderInfo :total="total" @verify="verify"/>
     </div>
   </div>
+  <button class="toggle-modal" hidden="hidden" data-bs-target="#notifyModal" data-bs-toggle="modal"></button>
   <NotificationModal/>
 </template>
 

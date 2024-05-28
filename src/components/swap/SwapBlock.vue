@@ -7,12 +7,12 @@ import TokenSelectorModal from "@/components/swap/modals/TokenSelectorModal.vue"
 export default {
   name: "SwapBlock",
   components: {TokenSelectorModal, TransactionSettingsModal, HistoryModal, ConnectWalletModal},
-  emits: ['showGraph', 'selectToken'],
+  emits: ['selectToken'],
+  props:['isGraphOpened'],
   data() {
     return {
       priceFrom: '',
       priceTo: '',
-      isGraphOpened: false,
       selectedFromToken: {
         name: 'USDT',
         icon: '/vearProject/images/currencies/usdt.svg',
@@ -50,10 +50,6 @@ export default {
         }
       }
     },
-    toggleGraph() {
-      this.isGraphOpened = !this.isGraphOpened
-      this.$emit('showGraph')
-    },
     setToken(data, type) {
       switch (type) {
         case 'from':
@@ -75,7 +71,7 @@ export default {
     <div class="d-flex justify-content-between">
       <p class="swap-block__title">Swap</p>
       <div class="d-flex gap-3">
-        <div :class="{'open-graph-btn':true, 'active': this.isGraphOpened}" @click="toggleGraph">
+        <div :class="{'open-graph-btn':true, 'active': this.isGraphOpened}">
           <i class="swap-block__icon fi fi-rr-chart-simple-horizontal"></i>
         </div>
         <i class="swap-block__icon fi fi-rr-time-past" data-bs-toggle="modal" data-bs-target="#historyModal"></i>

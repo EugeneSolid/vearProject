@@ -28,7 +28,7 @@ export default {
               :class="{'toggler-btn d-flex align-items-center justify-content-center': true,
               'selected': this.selectedType === 'expert'}"> Expert Mode</button>
     </div>
-    <SwapSection/>
+    <SwapSection :mode="this.selectedType"/>
   </div>
 </default-layout>
 </template>

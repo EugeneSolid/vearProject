@@ -86,8 +86,29 @@ export default {
 
 <style scoped>
 .main-info__logic-chain-section {
+  .title {
+    margin-bottom: 20px !important;
+  }
+
   .description {
+    font-size: 18px;
     text-align: justify !important;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  .hint {
+    font-size: 17px;
+    line-height: 26px;
   }
 }
+
+.main-info__finance-block {
+  .description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}
+
 </style>

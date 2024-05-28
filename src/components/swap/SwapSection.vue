@@ -5,6 +5,7 @@ import SwapGraphic from "@/components/swap/SwapGraphic.vue";
 export default {
   name: "SwapSection",
   components: {SwapGraphic, SwapBlock},
+  props: ['mode'],
   data() {
     return {
       openGraph: false,
@@ -23,9 +24,6 @@ export default {
     }
   },
   methods: {
-    showGraph() {
-      this.openGraph = !this.openGraph
-    },
     selectToken(data, type) {
       switch (type) {
         case 'from':
@@ -42,8 +40,8 @@ export default {
 
 <template>
 <div class="d-flex swap-section">
-  <SwapBlock @showGraph="() => this.showGraph()" @selectToken="selectToken"/>
-  <SwapGraphic :tokenFrom="tokenFrom" :tokenTo="tokenTo" v-if="openGraph"/>
+  <SwapBlock @selectToken="selectToken" :is-graph-opened="mode === 'expert'"/>
+  <SwapGraphic :tokenFrom="tokenFrom" :tokenTo="tokenTo" v-if="mode === 'expert'"/>
 </div>
 </template>
 

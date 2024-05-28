@@ -4,6 +4,11 @@
   font-family: 'SF Pro Display';
   padding: 33px 135px;
 
+  .content {
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+
   &__ad-info {
     font-size: 16px;
     font-weight: 400;

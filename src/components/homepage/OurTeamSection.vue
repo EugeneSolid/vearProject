@@ -7,7 +7,7 @@ export default {
 <template>
   <div class="team-section" id="ourTeam">
     <h2 class="mb-4 title">Founding Team</h2>
-    <div class="d-flex justify-content-between gap-3">
+    <div class="d-flex justify-content-center gap-3">
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">
           <img class="me-2" src="@/assets/images/founders/founder-1.png"/>
@@ -36,7 +36,7 @@ export default {
       </div>
     </div>
     <h2 class="mt-5 mb-4 title">Advisors</h2>
-    <div class="d-flex justify-content-between gap-3">
+    <div class="d-flex justify-content-center gap-3">
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">
           <img class="me-2" src="@/assets/images/founders/founder-3.png"/>

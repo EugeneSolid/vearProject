@@ -79,7 +79,6 @@ const router = createRouter({
     history: createWebHashHistory('/vearProject/'),
     routes,
     scrollBehavior (to, from, savedPosition) {
-        console.log(savedPosition)
         if (to.hash) {
             return {
                 el: to.hash,

@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
 
 import Homepage from "@/pages/Homepage.vue";
 import Marketplace from "@/pages/Marketplace.vue";
@@ -75,9 +75,20 @@ const routes = [
 ]
 
 const router = createRouter({
-    mode: 'history',
-    history: createWebHistory('/vearProject/'),
+    mode: 'hash',
+    history: createWebHashHistory('/vearProject/'),
     routes,
+    scrollBehavior (to, from, savedPosition) {
+        console.log(savedPosition)
+        if (to.hash) {
+            return {
+                el: to.hash,
+                behavior: 'smooth',
+                top: savedPosition ? -500 : 0
+            };
+        }
+        return { x: 0, y: 0 };  // Go to the top of the page if no hash
+    },
 })
 
 export default router

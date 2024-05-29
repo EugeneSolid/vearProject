@@ -8,7 +8,7 @@ export default {
   methods: {
     isUserAuthorized() {
       return localStorage.getItem('user')
-    }
+    },
   }
 }
 </script>
@@ -22,7 +22,7 @@ export default {
       </router-link>
       <div v-if="this.$route.path === '/'" class="d-flex">
         <router-link class="header__link home-link" to="/marketplace">Marketplace</router-link>
-        <a class="header__link home-link" href="#ourTeam">Our Team</a>
+        <a class="header__link home-link our-team-link" :href="'#/#ourTeam'">Our Team</a>
         <a class="header__link home-link" href="mailto:hello@liquidestate.io">Contact Us</a>
       </div>
       <div v-else class="d-flex">

@@ -14,10 +14,10 @@ export default {
         <img src="/vearProject/images/logo.svg" alt="logo">
         <div class="d-flex flex-column justify-content-end">
           <div class="d-flex justify-content-end mb-3">
-            <a v-if="this.$route.path === '/'" href="#ourTeam" class="footer__tec-info-btn">About Us</a>
-            <a v-else href="/vearProject/#ourTeam" class="footer__tec-info-btn">About Us</a>
-            <a v-if="this.$route.path === '/'" href="#faqSection" class="footer__tec-info-btn">FAQ</a>
-            <a v-else href="/vearProject/#faqSection" class="footer__tec-info-btn">FAQ</a>
+            <a v-if="this.$route.path === '/'" href="#/#ourTeam" class="footer__tec-info-btn">About Us</a>
+            <a v-else href="/vearProject/#/#ourTeam" class="footer__tec-info-btn">About Us</a>
+            <a v-if="this.$route.path === '/'" href="#/#faqSection" class="footer__tec-info-btn">FAQ</a>
+            <a v-else href="/vearProject/#/#faqSection" class="footer__tec-info-btn">FAQ</a>
             <button class="footer__tec-info-btn">Terms Of Service</button>
             <a href="mailto:hello@liquidestate.io" class="footer__tec-info-btn">Contact</a>
           </div>

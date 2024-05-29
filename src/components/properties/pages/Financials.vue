@@ -40,11 +40,11 @@ export default {
         <div class="card-body">
           <div class="d-flex justify-content-between collapse-item">
             <p class="mb-0 property-info-block__title">Underlying Asset Price</p>
-            <p class="mb-0 property-info-block__title">$4000</p>
+            <p class="mb-0 property-info-block__title">$4,000</p>
           </div>
           <div class="d-flex justify-content-between collapse-item dark">
             <p class="mb-0 property-info-block__title">Initial Maintenance Reserve (3.5%)</p>
-            <p class="mb-0 property-info-block__title">$3235</p>
+            <p class="mb-0 property-info-block__title">$3,235</p>
           </div>
           <div class="d-flex justify-content-between collapse-item">
             <p class="mb-0 property-info-block__title">Initial Renovation Reserve</p>
@@ -52,7 +52,7 @@ export default {
           </div>
           <div class="d-flex justify-content-between collapse-item dark">
             <p class="mb-0 property-info-block__title">Closing Costs</p>
-            <p class="mb-0 property-info-block__title">$1500</p>
+            <p class="mb-0 property-info-block__title">$1,500</p>
           </div>
           <div class="d-flex justify-content-between collapse-item">
             <p class="mb-0 property-info-block__title">Upfront LLC fees</p>
@@ -60,18 +60,18 @@ export default {
           </div>
           <div class="d-flex justify-content-between collapse-item dark">
             <p class="mb-0 property-info-block__title">Vacancy Reserve (2%)</p>
-            <p class="mb-0 property-info-block__title">$1000</p>
+            <p class="mb-0 property-info-block__title">$1,000</p>
           </div>
           <div class="d-flex justify-content-between collapse-item">
             <p class="mb-0 property-info-block__title">Liquid Estate Listing Fee (10%)</p>
-            <p class="mb-0 property-info-block__title">$25000</p>
+            <p class="mb-0 property-info-block__title">$25,000</p>
           </div>
         </div>
       </div>
     </div>
     <div class="d-flex justify-content-between property-info-block w-100 mb-3">
       <p class="mb-0 property-info-block__title">Expected Income</p>
-      <p class="text-end mb-0 property-info-block__value">13,5%</p>
+      <p class="text-end mb-0 property-info-block__value">13.5%</p>
     </div>
     <div class="d-flex justify-content-between property-info-block w-100 mb-3">
       <p class="mb-0 property-info-block__title">Annual Gross Rent</p>
@@ -130,15 +130,15 @@ export default {
     </div>
     <div class="d-flex justify-content-between property-info-block w-100 mb-3">
       <p class="mb-0 property-info-block__title">Monthly Gross Rent</p>
-      <p class="text-end mb-0 property-info-block__value">$6000</p>
+      <p class="text-end mb-0 property-info-block__value">$6,000</p>
     </div>
     <div class="d-flex justify-content-between property-info-block w-100 mb-3">
       <p class="mb-0 property-info-block__title">Monthly Costs</p>
-      <p class="text-end mb-0 property-info-block__value">$5000</p>
+      <p class="text-end mb-0 property-info-block__value">$5,000</p>
     </div>
     <div class="d-flex justify-content-between property-info-block w-100 mb-3">
       <p class="mb-0 property-info-block__title">Monthly Net Rent</p>
-      <p class="text-end mb-0 property-info-block__value">$3000</p>
+      <p class="text-end mb-0 property-info-block__value">$3,000</p>
     </div>
   </div>
 </template>

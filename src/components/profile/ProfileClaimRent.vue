@@ -66,7 +66,7 @@ export default {
             <td>
               <div class="d-flex flex-column">
                 <p class="mb-1 table-text">834 LIQD</p>
-                <p class="mb-0 table-subtext">$9786 USD</p>
+                <p class="mb-0 table-subtext">$9,786 USD</p>
               </div>
             </td>
             <td class="pe-3">
@@ -86,7 +86,7 @@ export default {
             <td>
               <div class="d-flex flex-column">
                 <p class="mb-1 table-text">834 LIQD</p>
-                <p class="mb-0 table-subtext">$9786 USD</p>
+                <p class="mb-0 table-subtext">$9,786 USD</p>
               </div>
             </td>
             <td>
@@ -106,7 +106,7 @@ export default {
             <td>
               <div class="d-flex flex-column">
                 <p class="mb-1 table-text">834 LIQD</p>
-                <p class="mb-0 table-subtext">$9786 USD</p>
+                <p class="mb-0 table-subtext">$9,786 USD</p>
               </div>
             </td>
             <td>

@@ -24,7 +24,7 @@ export default {
         </div>
         <div class="d-flex justify-content-between property-info-block">
           <p class="mb-0 property-info-block__title">Maximum Purchase</p>
-          <p class="text-end mb-0 property-info-block__value">62500 Tokens</p>
+          <p class="text-end mb-0 property-info-block__value">62,500 Tokens</p>
         </div>
       </div>
     </div>

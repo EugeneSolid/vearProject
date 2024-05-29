@@ -47,7 +47,7 @@ export default {
       Invest Now
     </button>
     <p class="text-center mb-2 range-hint">Minimum 10</p>
-    <p class="text-center mb-0 range-hint">Maximum 45000</p>
+    <p class="text-center mb-0 range-hint">Maximum 45,000</p>
   </div>
   <TermsModal :property="property"/>
 </template>

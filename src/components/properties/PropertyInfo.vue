@@ -25,7 +25,7 @@ export default {
       <div class="text-center property-option">
         <div class="option-margin">
         <i class="option-icon fi fi-rr-layout-fluid"></i>
-        <p class="mb-0 option-name">3234 sqft<br/>700sqm</p>
+        <p class="mb-0 option-name">3,234 sqft<br/>700sqm</p>
         </div>
       </div>
       <div class="text-center property-option">

@@ -35,7 +35,7 @@ export default {
         </div>
         <div class="d-flex justify-content-between align-items-center w-100 other-price">
           <p class="mb-0 other-price__label">Token Price</p>
-          <p class="mb-0 other-price__value">$26,4</p>
+          <p class="mb-0 other-price__value">$26.4</p>
         </div>
         <div class="d-flex justify-content-between align-items-center w-100 other-price">
           <p class="mb-0 other-price__label">Total Value</p>

@@ -116,6 +116,48 @@ export default {
         View Details
       </button></td>
     </tr>
+    <tr class="separator header"/>
+    <tr class="table-row">
+      <td class="table-text bold"><img class="table-property-img property" src="/vearProject/images/properties/property-4.jpg">LE0004</td>
+      <td style="height: 96px" class="pe-0 table-data d-flex align-items-center justify-content-between">
+        3,000
+        <span class="currency-changes up gap-1"><i class="fi fi-sr-caret-up"></i>28%</span>
+      </td>
+      <td class="table-data ps-2">$1</td>
+      <td class="table-data">$3,000</td>
+      <td class="table-data">$834</td>
+      <td class="table-data">13.5%</td>
+      <td> <button class="claim-btn" @click="openProperty('LE0003')">
+        View Details
+      </button></td>
+    </tr>
+    <tr class="separator header"/>
+    <tr class="table-row">
+      <td class="table-text bold"><img class="table-property-img property" src="/vearProject/images/properties/property-5.jpg">LE0005</td>
+      <td class="table-data">3,000</td>
+      <td class="table-data ps-2">$1</td>
+      <td class="table-data">$3,000</td>
+      <td class="table-data">$834</td>
+      <td class="table-data">13.5%</td>
+      <td> <button class="claim-btn" @click="openProperty('LE0003')">
+        View Details
+      </button></td>
+    </tr>
+    <tr class="separator header"/>
+    <tr class="table-row">
+      <td class="table-text bold"><img class="table-property-img property" src="/vearProject/images/properties/property-6.jpg">LE0006</td>
+      <td style="height: 96px" class="pe-0 table-data d-flex align-items-center justify-content-between">
+        3,000
+        <span class="currency-changes down gap-1"><i class="fi fi-sr-caret-down"></i>14.5%</span>
+      </td>
+      <td class="table-data ps-2">$1</td>
+      <td class="table-data">$3,000</td>
+      <td class="table-data">$834</td>
+      <td class="table-data">13.5%</td>
+      <td> <button class="claim-btn" @click="openProperty('LE0003')">
+        View Details
+      </button></td>
+    </tr>
   </table>
 </div>
 </template>

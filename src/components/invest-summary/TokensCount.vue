@@ -54,7 +54,7 @@ export default {
       <div class="d-flex align-items-center gap-3">
           <div class="d-flex justify-content-between align-items-center counter">
             <i class="button fi fi-br-minus" @click="decrementCounter()"></i>
-            <input type="text" @keydown='(e) => onlyNumber(e)' @keyup="$emit('changeCount', this.count)" maxlength="5" class="count-value" v-model="count">
+            <input type="text" @keydown='(e) => onlyNumber(e)' @keyup="$emit('changeCount', this.count.length > 0 ? this.count : 10)" maxlength="5" class="count-value" v-model="count">
             <i class="fi fi-br-plus button" @click="incrementCounter()"></i>
           </div>
         <p class="mb-0 hint">1$/Token</p>

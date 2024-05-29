@@ -54,7 +54,7 @@ export default {
         <table class="w-100 default-table">
           <tr class="table-columns">
             <th style="width: 155px;">Token</th>
-            <th style="width: 135px">Tokens owned</th>
+            <th style="width: 138px">Tokens Owned</th>
             <th style="width: 155px;">Total Rent Earned</th>
             <th style="width: 140px;" class="pe-2">Claimable Rent</th>
             <th style="width: 135px;"></th>

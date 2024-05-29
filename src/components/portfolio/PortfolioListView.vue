@@ -16,7 +16,7 @@ export default {
   <table class="w-100 default-table">
   <tr class="table-columns">
       <th style="width: 195px">Token</th>
-      <th style="width: 190px">Tokens owned</th>
+      <th style="width: 190px">Tokens Owned</th>
       <th class="ps-2" style="width: 140px">Token Price</th>
       <th style="width: 160px">Tokens Value</th>
       <th>Total Rent Earned</th>

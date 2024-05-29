@@ -40,7 +40,7 @@ export default {
           <span class="ms-2">Swap</span></router-link>
       </div>
       <div v-if="this.$route.path === '/'">
-        <a target="_blank" class="header__button" href="https://bit.ly/LEpaper">
+        <a target="_blank" class="header__button" href="https://liquidestate.io/">
           <img class="button-img" src="/vearProject/images/currencies/lidq.svg">
           App Demo
         </a>

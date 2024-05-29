@@ -19,7 +19,8 @@ export default {
           total: '$231,500',
           income: '9.9%',
           rent: '$1,905',
-          display: 'new'
+          display: 'new',
+          imgCount: 9
         },
         {
           image: '/vearProject/images/properties/property-2.png',
@@ -30,7 +31,8 @@ export default {
           total: '$266,150',
           income: '10.1%',
           rent: '$2,251',
-          display: 'secondary'
+          display: 'secondary',
+          imgCount: 8
         },
         {
           image: '/vearProject/images/properties/property-3.png',
@@ -41,7 +43,8 @@ export default {
           total: '$243,050',
           income: '13.7%',
           rent: '$2,771',
-          display: 'secondary'
+          display: 'secondary',
+          imgCount: 8
         },
         {
           image: '/vearProject/images/properties/property-4.jpg',
@@ -52,7 +55,8 @@ export default {
           total: '$634,500',
           income: '9.9%',
           rent: '$6,240',
-          display: 'secondary'
+          display: 'secondary',
+          imgCount: 11
         },
         {
           image: '/vearProject/images/properties/property-5.jpg',
@@ -63,7 +67,8 @@ export default {
           total: '$4,299,999',
           income: '6.84%',
           rent: '$29,410',
-          display: 'new'
+          display: 'new',
+          imgCount: 8
         },
         {
           image: '/vearProject/images/properties/property-6.jpg',
@@ -74,7 +79,8 @@ export default {
           total: '$553,270',
           income: '9.85%',
           rent: '$5,530',
-          display: 'new'
+          display: 'new',
+          imgCount: 5
         },
       ]
     }

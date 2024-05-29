@@ -5,7 +5,7 @@
       <p class="mb-0">{{ property.type.name }}</p>
     </div>
     <div class="position-absolute images-count">
-      <p class="mb-0">3 of 45 Photos</p>
+      <p class="mb-0">{{ counter }} of {{ property.imgCount }} Photos</p>
     </div>
     <swiper
         :loop="true"
@@ -13,54 +13,18 @@
         :thumbs="{ swiper: thumbsSwiper }"
         :modules="modules"
         :hideOnClick="true"
+        @navigation-next="swiper => onArrowClick(swiper)"
+        @navigation-prev="swiper => onArrowClick(swiper)"
         class="mySwiper2"
     >
-      <swiper-slide>
-        <div class="shadow">
-          <img :src="property.image"/>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="shadow">
-          <img src="/vearProject/images/properties/property-page/img-1.jpeg"/>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="shadow">
-          <img src="/vearProject/images/properties/property-page/img-2.jpeg"/>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="shadow">
-          <img src="/vearProject/images/properties/property-page/img-3.jpeg"/>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="shadow">
-          <img src="/vearProject/images/properties/property-page/img-4.jpeg"/>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="shadow">
-          <img src="/vearProject/images/properties/property-page/img-5.jpeg"/>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="shadow">
-          <img src="/vearProject/images/properties/property-page/img-6.jpeg"/>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="shadow">
-          <img src="/vearProject/images/properties/property-page/img-7.jpeg"/>
-        </div>
-      </swiper-slide>
-      <swiper-slide>
-        <div class="shadow">
-          <img src="/vearProject/images/properties/property-page/img-8.jpeg"/>
+      <swiper-slide v-for="count in property.imgCount">
+        <div class="shadow" data-bs-target="#fullView" data-bs-toggle="modal">
+          <img
+               :src="'/vearProject/images/properties/property-' + property.number.slice(-1) + '/' + count + '.jpg'"/>
         </div>
       </swiper-slide>
     </swiper>
+
     <div style=" mask-image: linear-gradient(90deg, rgba(255,255,255,1) 87%, rgba(255,255,255,0) 98%);
 ">
       <swiper
@@ -68,41 +32,20 @@
           :spaceBetween="8"
           :slidesPerView="8"
           :watchSlidesProgress="true"
+          :watchSlidesVisibility="true"
           :modules="modules"
+          @click="(swiper) => test(swiper)"
           class="mySwiper"
       >
-        <swiper-slide style="display: none">
-          <img :src="property.image"/>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/vearProject/images/properties/property-page/img-1.jpeg"/>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/vearProject/images/properties/property-page/img-2.jpeg"/>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/vearProject/images/properties/property-page/img-3.jpeg"/>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/vearProject/images/properties/property-page/img-4.jpeg"/>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/vearProject/images/properties/property-page/img-5.jpeg"/>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/vearProject/images/properties/property-page/img-6.jpeg"/>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/vearProject/images/properties/property-page/img-7.jpeg"/>
-        </swiper-slide>
-        <swiper-slide>
-          <img src="/vearProject/images/properties/property-page/img-8.jpeg"/>
+        <swiper-slide v-for="count in property.imgCount">
+          <img :src="'/vearProject/images/properties/property-' + property.number.slice(-1) + '/' + count + '.jpg'"/>
         </swiper-slide>
       </swiper>
     </div>
-
   </div>
-
+<FullView :imgSource="'/vearProject/images/properties/property-' + property.number.slice(-1) + '/'"
+          :imgCount="property.imgCount"
+          :currentSlide="this.counter"/>
 </template>
 <script>
 import {Swiper, SwiperSlide} from 'swiper/vue';
@@ -111,9 +54,17 @@ import 'swiper/scss/free-mode';
 import 'swiper/scss/navigation';
 import 'swiper/scss/thumbs';
 import {FreeMode, Navigation, Thumbs} from 'swiper/modules';
+import FullView from "@/components/properties/popup/FullVIew.vue";
+import login from "@/pages/Login.vue";
 
 export default {
+  computed: {
+    login() {
+      return login
+    }
+  },
   components: {
+    FullView,
     Swiper,
     SwiperSlide,
   },
@@ -121,12 +72,20 @@ export default {
   data() {
     return {
       thumbsSwiper: null,
-      modules: [FreeMode, Navigation, Thumbs]
+      modules: [FreeMode, Navigation, Thumbs],
+      counter: 1
     }
   },
   methods: {
     setThumbsSwiper(swiper) {
       this.thumbsSwiper = swiper;
+    },
+
+    onArrowClick(swiper) {
+      this.counter = swiper.realIndex + 1;
+    },
+    test(swiper) {
+      this.counter = swiper.clickedIndex + 1;
     }
   }
 }

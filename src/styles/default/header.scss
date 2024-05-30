@@ -194,17 +194,25 @@
 
         .modal-body {
           margin-top: 50px;
-          .home-link {
+
+          .home-link, .header__link {
             color: #257CFF;
             text-align: center;
             font-weight: 400;
             letter-spacing: unset;
             line-height: 20px;
             background-color: transparent;
+            border: none;
 
             button {
               background-color: transparent;
               color: #257CFF;
+            }
+
+            svg {
+              path {
+                fill: #257CFF;
+              }
             }
           }
 
@@ -219,10 +227,30 @@
               border: 2px solid #257CFF !important;
               border-radius: 25px;
               background-color: transparent;
-              padding: 4px 20px;
+              padding: 6px 20px;
               font-weight: 600;
               color: #257CFF;
               letter-spacing: -0.5px;
+            }
+          }
+
+          .header__login-button, .profile-btn {
+            margin-top: 10px;
+            border: 2px solid #257CFF !important;
+            border-radius: 25px;
+            background-color: transparent;
+            padding: 6px 20px;
+            font-weight: 600;
+            color: #257CFF;
+            letter-spacing: -0.5px;
+          }
+
+          .profile-btn {
+            padding: 4px 20px;
+
+            img {
+              width: 40px;
+              height: 40px;
             }
           }
         }

@@ -34,7 +34,7 @@ export default {
                 <button class="border-0 w-100" data-bs-dismiss="modal">Contact Us</button>
               </a>
             </div>
-            <div v-else class="d-flex">
+            <div v-else class="d-flex flex-column align-items-center gap-1">
               <button v-if="this.isUserAuthorized()" data-bs-dismiss="modal"
                       class="header__link d-flex align-items-center" @click="this.$router.push({path: '/portfolio'})">
                 <v-icon icon-url="/vearProject/images/header/portfolio.svg"/>
@@ -65,7 +65,7 @@ export default {
                 </button>
               </a>
             </div>
-            <div v-else>
+            <div v-else class="d-flex justify-content-center">
               <button v-if="!this.isUserAuthorized()" class="header__login-button"
                       data-bs-dismiss="modal" @click="this.$router.push({path: '/login'})">
                 <i class="fi fi-rr-circle-user"></i>

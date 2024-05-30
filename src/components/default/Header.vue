@@ -1,7 +1,7 @@
 <script>
 
 import VIcon from "@/components/generic/VIcon.vue";
-import MobileHeaderMenu from "@/components/MobileHeaderMenu.vue";
+import MobileHeaderMenu from "@/components/homepage/MobileHeaderMenu.vue";
 
 export default {
   name: "Header",

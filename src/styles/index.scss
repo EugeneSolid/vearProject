@@ -15,6 +15,18 @@
   outline: none;
 }
 
+body {
+  padding-right: 0 !important;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-backdrop {
+  background-color: transparent;
+}
+
 .title {
   font-family: SF Pro Display, sans-serif;
   font-size: 32px;
@@ -51,4 +63,16 @@
   line-height: 12px;
   letter-spacing: 0.015em;
   color: #6B7688;
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .description {
+    font-size: 15px;
+    line-height: 27px;
+  }
 }

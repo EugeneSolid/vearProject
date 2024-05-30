@@ -46,7 +46,7 @@ export default {
 <template>
 <div class="properties">
 <p class="title mb-5">Find Your Perfect Investment</p>
-  <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between properties-list">
     <PropertyItem v-for="property in this.properties" :property="property"/>
   </div>
   <div class="w-100 d-flex justify-content-center">

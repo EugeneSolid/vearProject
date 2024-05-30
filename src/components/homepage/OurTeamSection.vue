@@ -7,10 +7,10 @@ export default {
 <template>
   <div class="team-section" id="ourTeam">
     <h2 class="mb-4 title">Founding Team</h2>
-    <div class="d-flex justify-content-center gap-3">
+    <div class="d-flex justify-content-center gap-3 team-info-section">
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">
-          <img class="me-2" src="@/assets/images/founders/founder-1.png"/>
+          <img class="me-2" src="@/assets/images/founders/founder-1.jpg"/>
           <div>
             <p class="mb-2 member-name">Valentin Nicoara</p>
             <p class="mb-0 job-title">CEO</p>
@@ -23,7 +23,7 @@ export default {
       </div>
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">
-          <img class="me-2" src="@/assets/images/founders/founder-2.png"/>
+          <img class="me-2" src="@/assets/images/founders/founder-2.jpeg"/>
           <div>
             <p class="mb-2 member-name">George Wolfe</p>
             <p class="mb-0 job-title">CFO</p>
@@ -36,10 +36,10 @@ export default {
       </div>
     </div>
     <h2 class="mt-5 mb-4 title">Advisors</h2>
-    <div class="d-flex justify-content-center gap-3">
+    <div class="d-flex justify-content-center gap-3 team-info-section">
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">
-          <img class="me-2" src="@/assets/images/founders/founder-3.png"/>
+          <img class="me-2" src="@/assets/images/founders/founder-3.jpg"/>
           <div>
             <p class="mb-2 member-name">Kyle Teague</p>
             <p class="mb-0 job-title">Advisor</p>

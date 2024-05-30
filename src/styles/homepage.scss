@@ -133,6 +133,10 @@
       background-repeat: no-repeat;
       border-radius: 24px;
 
+      .money-images, .money-bottom-images {
+        display: none;
+      }
+
       .block-info {
         max-width: 770px;
         margin-top: 70px;
@@ -252,6 +256,11 @@
         font-weight: 700;
         line-height: 19.09px;
         letter-spacing: 0.015em;
+      }
+
+      img {
+        width: 65px;
+        border-radius: 50%;
       }
     }
   }
@@ -433,6 +442,292 @@
           }
         }
 
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .homepage {
+    padding-bottom: 45px;
+
+    .video-section {
+      margin-top: -116px !important;
+
+      .main-part-info {
+        top: 155px;
+
+        &__title {
+          font-size: 30px;
+        }
+
+        &__description {
+          font-size: 16px;
+          line-height: 30px;
+        }
+      }
+    }
+
+    .main-info {
+      margin-top: 60px;
+      padding: 0 30px;
+
+      .title {
+        margin-bottom: 16px !important;
+      }
+
+      .advantages-section {
+        flex-direction: column;
+        gap: 20px !important;
+
+        &__block {
+          width: 100% !important;
+          background-image: linear-gradient(180deg, #f8f8f8 25%, #8F98A72B 58%) !important;
+        }
+      }
+
+      &__logic-chain-section {
+        padding: 0 30px;
+
+        .chain-component {
+          flex-direction: column;
+
+          .title {
+            text-align: center !important;
+          }
+
+          .description {
+            font-size: 15px !important;
+            text-align: center !important;
+          }
+
+          .hint {
+            font-size: 15px;
+            text-align: center !important;
+          }
+
+          &.solution-part {
+            flex-direction: column-reverse;
+          }
+        }
+
+        .problem-img, .how-it-works-img {
+          margin-right: 0;
+          margin-left: 0;
+        }
+
+        .iphone-ing, .problem-img, .how-it-works-img {
+          width: 100%;
+        }
+      }
+
+      &__finance-block {
+        background: transparent;
+        width: unset !important;
+        padding: 0 30px;
+        height: unset;
+
+        .block-info {
+          margin-top: 0;
+
+          .money-images {
+            display: flex;
+            margin-bottom: 20px;
+
+            .card-img {
+              width: 20%;
+              height: 20%;
+            }
+
+            .money-img {
+              width: 20%;
+              height: 20%;
+            }
+          }
+
+          .money-bottom-images {
+            display: flex;
+
+            .card-img {
+              width: 20%;
+              height: 20%;
+            }
+
+            .money-img {
+              width: 10%;
+              height: 20%;
+              margin: -14px 16px 0 0;
+            }
+          }
+
+          .title {
+            margin-bottom: 20px !important;
+          }
+
+          .description {
+            font-size: 15px;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+
+    .community-section {
+      padding: 40px 0;
+      margin-bottom: 80px;
+
+      .title {
+        margin-bottom: 27px !important;
+      }
+
+      .community-list {
+        padding: 0 30px;
+        flex-direction: column;
+        gap: 20px;
+
+        .community-block {
+          padding: 20px 20px 35px;
+          width: 100%;
+          background-image: linear-gradient(180deg, #fff 50%, #E9E9E98F 100%);
+          box-shadow: none;
+
+          img {
+            width: 54px;
+          }
+
+          .social-media-title {
+            font-size: 16px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+          }
+
+          .follow-link-btn {
+            padding: 8.5px 0;
+            width: 130px;
+          }
+        }
+      }
+    }
+
+    .properties {
+      padding: 0 10px;
+
+      .title {
+        margin-bottom: 20px !important;
+      }
+
+      .properties-list {
+        flex-direction: column;
+        gap: 25px;
+
+        .property-item {
+          width: 100%;
+
+          .info-section {
+            padding: 16px 20px;
+          }
+
+          .total-price {
+            &__label {
+              font-size: 16px;
+            }
+
+            &__value {
+              font-size: 20px;
+            }
+          }
+
+          .other-price {
+            &__label {
+              font-size: 14px;
+            }
+
+            &__value {
+              font-size: 14px;
+            }
+          }
+
+          .view-property-btn {
+            padding: 8px;
+          }
+        }
+      }
+
+      .show-all-properties-btn {
+        margin-top: 30px;
+        padding: 10.5px 0;
+        width: 220px;
+      }
+    }
+
+    .team-section {
+      padding: 0 30px;
+      margin-bottom: 80px;
+
+      .title {
+        font-size: 32px;
+      }
+
+      .team-info-section {
+        flex-direction: column;
+
+        .team-member-info {
+          padding: 20px;
+          width: 100%;
+          background-image: linear-gradient(180deg, #f9f9fc 0%, #f1f2f6 100%);
+
+          img {
+            width: 20vw;
+          }
+
+          .member-name {
+            margin-bottom: 12px !important;
+          }
+
+          .job-title {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .faq-accordion-section {
+      padding: 0 10px;
+      .faq-accordion {
+        flex-direction: column;
+        gap: 0 !important;
+
+        .accordion-item {
+          margin-bottom: 22px;
+        }
+      }
+    }
+
+    .view-whitepaper {
+      height: 320px;
+      margin: 80px 10px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+
+      &::after {
+       background-size: auto;
+      }
+
+      .lightning-icon {
+        width: 20%;
+        height: auto;
+        z-index: 99;
+        top: -10%;
+        right: 5%;
+      }
+
+      .plane-icon {
+        width: 15%;
+        height: auto;
+        z-index: 99;
+        left: 5%;
+        bottom: 4%;
       }
     }
   }

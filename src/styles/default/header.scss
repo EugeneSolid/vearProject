@@ -5,6 +5,10 @@
   z-index: 99;
   position: relative;
 
+  .mobile-nav-button {
+    display: none;
+  }
+
   .header-elements {
     max-width: 1170px;
     margin: 0 auto;
@@ -122,4 +126,114 @@
     border: 4px solid #F2F3F5;
     margin-right: 8px;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 30px 10px 35px 10px;
+
+    .header-elements {
+      align-items: start !important;
+
+      .homepage-header-links, .right-side-button {
+        display: none !important;
+      }
+
+      .mobile-nav-button {
+        display: flex;
+        flex-direction: column;
+
+        i {
+          font-size: 28px;
+          margin-right: 10px;
+          color: white;
+          height: 28px;
+
+          &.one-line {
+            height: 14px;
+          }
+        }
+
+        &.blue-colored {
+          i {
+            color: #257CFF;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile-header-modal {
+    background-color: #1A6AE1A6 !important;
+
+    &.fade-custom {
+      .modal-dialog {
+        max-width: 380px;
+        transition: all .50s linear !important;
+        transform: scale(0) !important;
+        margin-left: auto;
+        margin-right: auto;
+
+        .modal-content {
+          border-radius: 13px;
+          padding-bottom: 35px;
+          padding-top: 15px;
+          box-shadow: 2px 8px 23px 3px rgba(0, 0, 0, .2);
+
+          .modal-header {
+            padding-right: 35px !important;
+            padding-top: 16px !important;
+
+
+            .btn-close {
+              opacity: 1;
+              filter: invert(35%) sepia(100%) saturate(2196%) hue-rotate(206deg) brightness(102%) contrast(102%);
+            }
+          }
+        }
+
+        .modal-body {
+          margin-top: 50px;
+          .home-link {
+            color: #257CFF;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: unset;
+            line-height: 20px;
+            background-color: transparent;
+
+            button {
+              background-color: transparent;
+              color: #257CFF;
+            }
+          }
+
+          .header__button {
+            margin-top: 10px;
+            .button-img {
+              width: 30px;
+              margin-right: 6px;
+            }
+
+            button {
+              border: 2px solid #257CFF !important;
+              border-radius: 25px;
+              background-color: transparent;
+              padding: 4px 20px;
+              font-weight: 600;
+              color: #257CFF;
+              letter-spacing: -0.5px;
+            }
+          }
+        }
+      }
+
+      &.show {
+        .modal-dialog {
+          transform: scale(1) !important;
+        }
+      }
+    }
+  }
+
 }

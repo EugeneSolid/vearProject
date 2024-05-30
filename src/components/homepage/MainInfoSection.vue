@@ -15,25 +15,25 @@ export default {
     <div class="d-flex advantages-section">
       <div class="advantages-section__block d-flex flex-column align-items-center justify-content-start">
         <i class="fi fi-rs-building"></i>
-        <p class="mb-0 block-text">Fractional real estate ownership. You own 5% of the building, Get 5% of the rent.</p>
+        <p class="mb-0 block-text">Fractional real estate ownership.<br/> You own 5% of the building,<br/> Get 5% of the rent.</p>
       </div>
       <div class="advantages-section__block d-flex flex-column align-items-center justify-content-start">
         <i class="fi fi-rr-usd-circle"></i>
-        <p class="mb-0 block-text">Earn rent immediately. Rent is being calculated and paid every transaction block.</p>
+        <p class="mb-0 block-text">Earn rent immediately.<br/> Rent is being calculated and<br/> paid every transaction block.</p>
       </div>
       <div class="advantages-section__block d-flex flex-column align-items-center justify-content-start">
         <i class="fi fi-rr-handshake"></i>
-        <p class="mb-0 block-text">Trade your tokens freely. Buy and sell your tokens anytime, 24/7.</p>
+        <p class="mb-0 block-text">Trade your tokens freely.<br/> Buy and sell your tokens<br/> anytime, 24/7.</p>
       </div>
       <div class="advantages-section__block d-flex flex-column align-items-center justify-content-start">
         <i class="fi fi-rr-settings"></i>
-        <p class="mb-0 block-text">All properties are managed by a management company, so you don't need to do
+        <p class="mb-0 block-text">All properties are managed by a<br/> management company, so you<br/> don't need to do
           anything.</p>
       </div>
     </div>
   </div>
   <div class="main-info__logic-chain-section">
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center chain-component">
       <img class="problem-img" src="@/assets/images/homepage-chain/problem.png">
       <div>
         <p class="pb-0 title text-start">The Problem</p>
@@ -44,7 +44,7 @@ export default {
           estate assets are considered iliquid assets.</p>
       </div>
     </div>
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center chain-component solution-part">
       <div>
         <p class="mb-0 title text-start">The Solution</p>
         <p class="mb-4 description text-start">Liquid Estate proposes an innovative solution to eliminate all these barriers by
@@ -59,7 +59,7 @@ export default {
       </div>
       <img class="iphone-ing" src="@/assets/images/homepage-chain/iphone.png">
     </div>
-    <div class="d-flex justify-content-between align-items-center">
+    <div class="d-flex justify-content-between align-items-center chain-component">
       <img class="how-it-works-img" src="@/assets/images/homepage-chain/how-it-works.png">
       <div>
         <p class="mb-0 title text-start">How it works</p>
@@ -74,11 +74,19 @@ export default {
   </div>
   <div class="main-info__finance-block d-flex flex-column align-items-center justify-content-start ">
     <div class="block-info">
+      <div class="justify-content-between money-images">
+        <img class="card-img" src="https://liquidestate.io/wp-content/uploads/2022/08/business-3d-blue-credit-card-front-1.png">
+        <img class="money-img" src="https://liquidestate.io/wp-content/uploads/2022/08/business-3d-flying-dollar-1-2.png">
+      </div>
       <p class="title mb-2">Your Money, Your Decisions</p>
       <p class="description mb-0">A DAO is created for every property, and all property decisions are put to the vote by
         owners through our governance structure. These choices include everything from addressing repair requests to
         choosing the tenant. A supermajority (60 percent or more) decides which decisions win, and those results are
         automatically forwarded to the property manager to carry through</p>
+      <div class="justify-content-between money-bottom-images">
+        <img class="card-img" src="https://liquidestate.io/wp-content/uploads/2022/08/business-3d-flying-banknote-1.png">
+        <img class="money-img" src="https://liquidestate.io/wp-content/uploads/2022/08/business-3d-blue-increase-arrow-1.png">
+      </div>
     </div>
   </div>
 

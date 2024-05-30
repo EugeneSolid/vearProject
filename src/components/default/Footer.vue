@@ -10,10 +10,10 @@ export default {
 <template>
   <footer class="footer">
     <div class="content">
-      <div class="d-flex justify-content-between mb-4 align-items-start">
+      <div class="d-flex justify-content-between mb-4 align-items-start footer__links-section">
         <img src="/vearProject/images/logo.svg" alt="logo">
-        <div class="d-flex flex-column justify-content-end">
-          <div class="d-flex justify-content-end mb-3">
+        <div class="d-flex flex-column justify-content-end footer-links">
+          <div class="d-flex justify-content-end footer-tec-links mb-3">
             <a v-if="this.$route.path === '/'" href="#/#ourTeam" class="footer__tec-info-btn">About Us</a>
             <a v-else href="/vearProject/#/#ourTeam" class="footer__tec-info-btn">About Us</a>
             <a v-if="this.$route.path === '/'" href="#/#faqSection" class="footer__tec-info-btn">FAQ</a>

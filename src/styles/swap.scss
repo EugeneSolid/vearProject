@@ -587,11 +587,12 @@
     }
 
     &__header {
-      max-width: 745px;
+      max-width: 475px;
       width: unset;
 
       .lidq-balance {
         padding-right: 11px;
+
         svg {
           width: 28px;
           height: 28px;
@@ -609,9 +610,12 @@
     flex-direction: column;
 
     .swap-block {
-      max-width: 370px;
-      width: unset;
+      width: 100%;
       flex: 0 0 100%;
+
+      .swap-icon {
+        right: 45%;
+      }
     }
 
     .swap-graphic {
@@ -636,5 +640,16 @@
 
   .connect-wallet-btn {
     padding: 9.5px 6px !important;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .swap-section {
+    padding: 0 30px;
+
+    .swap-graphic {
+      width: 100%;
+      overflow-x: scroll;
+    }
   }
 }

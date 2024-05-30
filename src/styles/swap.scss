@@ -270,6 +270,7 @@
     gap: 30px;
 
     .linear-graphic {
+      width: 770px;
       height: 400px;
       background-image: url("/public/images/graphics/linear_swap.svg");
       background-repeat: no-repeat;
@@ -419,7 +420,7 @@
           padding: 18.5px 0;
 
           &.auto-btn {
-            flex:  0 0 96px;
+            flex: 0 0 96px;
           }
         }
 
@@ -576,5 +577,64 @@
       }
 
     }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .swap {
+    .swap-element {
+      padding: 0 30px;
+    }
+
+    &__header {
+      max-width: 745px;
+      width: unset;
+
+      .lidq-balance {
+        padding-right: 11px;
+        svg {
+          width: 28px;
+          height: 28px;
+        }
+      }
+
+      .buy-btn, .connect-wallet-btn {
+        padding: 8.1px 4px;
+      }
+    }
+  }
+
+  .swap-section {
+    padding: 0 30px;
+    flex-direction: column;
+
+    .swap-block {
+      max-width: 370px;
+      width: unset;
+      flex: 0 0 100%;
+    }
+
+    .swap-graphic {
+      width: 100%;
+      overflow-x: scroll;
+    }
+  }
+
+  .toggler-element {
+    padding: 0 30px;
+
+    .property-view-toggler {
+      gap: 5px;
+      max-width: 370px;
+      width: unset;
+
+      .toggler-btn {
+        padding: 9.5px 6px;
+      }
+    }
+  }
+
+  .connect-wallet-btn {
+    padding: 9.5px 6px !important;
   }
 }

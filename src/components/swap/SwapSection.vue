@@ -41,7 +41,9 @@ export default {
 <template>
 <div class="d-flex swap-section">
   <SwapBlock @selectToken="selectToken" :is-graph-opened="mode === 'expert'"/>
-  <SwapGraphic :tokenFrom="tokenFrom" :tokenTo="tokenTo" v-if="mode === 'expert'"/>
+  <div class="swap-graphic" v-if="mode === 'expert'">
+  <SwapGraphic :tokenFrom="tokenFrom" :tokenTo="tokenTo"/>
+  </div>
 </div>
 </template>
 

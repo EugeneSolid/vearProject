@@ -20,13 +20,15 @@ export default {
   <div class="swap">
     <p class="title mb-4">Swap Tokens</p>
     <SwapHeader/>
-    <div class="d-flex property-view-toggler mb-4">
-      <button @click="this.selectedType = 'simple'"
-              :class="{'toggler-btn d-flex align-items-center justify-content-center': true,
+    <div class="toggler-element">
+      <div class="d-flex property-view-toggler mb-4">
+        <button @click="this.selectedType = 'simple'"
+                :class="{'toggler-btn d-flex align-items-center justify-content-center': true,
               'selected': this.selectedType === 'simple'}">Simple Mode</button>
-      <button @click="this.selectedType = 'expert'"
-              :class="{'toggler-btn d-flex align-items-center justify-content-center': true,
+        <button @click="this.selectedType = 'expert'"
+                :class="{'toggler-btn d-flex align-items-center justify-content-center': true,
               'selected': this.selectedType === 'expert'}"> Expert Mode</button>
+      </div>
     </div>
     <SwapSection :mode="this.selectedType"/>
   </div>

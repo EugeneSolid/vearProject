@@ -51,3 +51,76 @@
     }
   }
 }
+
+@media screen and (max-width: 1170px){
+  .properties-list {
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding: 0 30px;
+
+    .property-item {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .marketplace {
+    &__header {
+      padding: 0 30px;
+    }
+
+    .properties-list {
+      grid-template-columns: 1fr !important;
+      padding: 0 30px;
+
+      .property-item {
+        width: 100%;
+
+        .info-section {
+          padding: 16px 20px;
+        }
+
+        .total-price {
+          margin-bottom: 0;
+
+          &__label {
+            font-size: 16px;
+          }
+
+          &__value {
+            font-size: 20px;
+          }
+        }
+
+        .other-price {
+          &__label {
+            font-size: 14px;
+          }
+
+          &__value {
+            font-size: 14px;
+          }
+        }
+
+        .view-property-btn {
+          padding: 8px;
+        }
+      }
+    }
+  }
+
+  .toggler-component {
+    padding: 0 30px;
+
+    .property-view-toggler {
+      gap: 5px;
+      max-width: 370px;
+      width: unset;
+
+      .toggler-btn {
+        padding: 9.5px 6px;
+      }
+    }
+  }
+}

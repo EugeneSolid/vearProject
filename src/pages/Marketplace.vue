@@ -91,21 +91,24 @@ export default {
           Earn rent immediately. Sell anytime.</p>
       </div>
       <div class="mt-3">
-        <div class="d-flex property-view-toggler mb-4">
-          <button @click="this.selectedType = 'new'"
-                  :class="{'toggler-btn': true, 'selected': this.selectedType === 'new'}">New Listings
-          </button>
-          <button @click="this.selectedType = 'secondary'"
-                  :class="{'toggler-btn': true, 'selected': this.selectedType === 'secondary'}">Secondary Market
-          </button>
+        <div class="toggler-component">
+          <div class="d-flex property-view-toggler mb-4">
+            <button @click="this.selectedType = 'new'"
+                    :class="{'toggler-btn': true, 'selected': this.selectedType === 'new'}">New Listings
+            </button>
+            <button @click="this.selectedType = 'secondary'"
+                    :class="{'toggler-btn': true, 'selected': this.selectedType === 'secondary'}">Secondary Market
+            </button>
+          </div>
         </div>
+
         <div v-if="this.selectedType === 'new'" class="properties-list">
-          <div class="col-4" v-for="property in this.properties">
+          <div v-for="property in this.properties">
             <PropertyItem :property="property" :is-sold-out="true"/>
           </div>
         </div>
         <div v-else class="properties-list">
-          <div class="col-4" v-for="property in this.properties" v-show="property.display === 'secondary'">
+          <div v-for="property in this.properties" v-show="property.display === 'secondary'">
             <PropertyItem :property="property"/>
           </div>
         </div>

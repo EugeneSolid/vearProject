@@ -10,7 +10,7 @@ export default {
     <div class="d-flex justify-content-center gap-3 team-info-section">
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">
-          <img class="me-2" src="@/assets/images/founders/founder-1.jpg"/>
+          <img class="me-2" src="@/assets/images/founders/founder-1.png"/>
           <div>
             <p class="mb-2 member-name">Valentin Nicoara</p>
             <p class="mb-0 job-title">CEO</p>
@@ -23,7 +23,7 @@ export default {
       </div>
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">
-          <img class="me-2" src="@/assets/images/founders/founder-2.jpeg"/>
+          <img class="me-2" src="@/assets/images/founders/founder-2.png"/>
           <div>
             <p class="mb-2 member-name">George Wolfe</p>
             <p class="mb-0 job-title">CFO</p>
@@ -39,7 +39,7 @@ export default {
     <div class="d-flex justify-content-center gap-3 team-info-section">
       <div class="team-member-info">
         <div class="d-flex align-items-center gap-2">
-          <img class="me-2" src="@/assets/images/founders/founder-3.jpg"/>
+          <img class="me-2" src="@/assets/images/founders/founder-3.png"/>
           <div>
             <p class="mb-2 member-name">Kyle Teague</p>
             <p class="mb-0 job-title">Advisor</p>

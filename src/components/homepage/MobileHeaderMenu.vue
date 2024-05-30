@@ -65,7 +65,7 @@ export default {
                 </button>
               </a>
             </div>
-            <div v-else class="d-flex justify-content-center">
+            <div v-else class="d-flex justify-content-center pt-1 pb-2">
               <button v-if="!this.isUserAuthorized()" class="header__login-button"
                       data-bs-dismiss="modal" @click="this.$router.push({path: '/login'})">
                 <i class="fi fi-rr-circle-user"></i>

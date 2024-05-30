@@ -100,8 +100,8 @@ export default {
           </button>
         </div>
         <div v-if="this.selectedType === 'new'" class="properties-list">
-          <div class="col-4" v-for="property in this.properties" v-show="property.display === 'new'">
-            <PropertyItem :property="property"/>
+          <div class="col-4" v-for="property in this.properties">
+            <PropertyItem :property="property" :is-sold-out="true"/>
           </div>
         </div>
         <div v-else class="properties-list">

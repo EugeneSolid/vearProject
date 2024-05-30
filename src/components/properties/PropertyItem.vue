@@ -3,7 +3,7 @@ import router from "@/router/router";
 
 export default {
   name: "PropertyItem",
-  props: ['property'],
+  props: ['property', 'isSoldOut'],
   methods: {
     openProperty() {
       router.push(`/property/${this.property.number.toLowerCase()}`)
@@ -20,8 +20,8 @@ export default {
         <p class="mb-0">{{ property.type.name }}</p>
       </div>
       <img class="property-photo" :src="property.image"/>
-      <img class="sold-out-img" v-if="property.number === 'LE0005' || property.number === 'LE0006'
-        " src="/vearProject/images/sold-out.png">
+      <img class="sold-out-img" v-if="property.number !== 'LE0001' && !!isSoldOut"
+           src="/vearProject/images/sold-out.png">
     </div>
     <div class="info-section">
       <div>

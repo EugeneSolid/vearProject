@@ -1,7 +1,11 @@
 .login {
-  width: 370px;
+  width: 430px;
   margin: 100px auto;
   font-family: SF Pro Display, sans-serif;
+
+  &__inputs {
+    margin: 0 30px;
+  }
 
   &__label {
     font-size: 16px;

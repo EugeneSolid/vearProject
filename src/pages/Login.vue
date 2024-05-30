@@ -39,7 +39,7 @@ export default {
     <div style="margin-bottom: 95px;" class="w-100 text-center">
       <img src="/vearProject/images/logo.svg">
     </div>
-    <div class="text-center">
+    <div class="text-center login__inputs">
       <h1 class="title mb-4">Login</h1>
       <div class="d-flex flex-column">
         <label class="text-start mb-3 login__label">Email ID</label>

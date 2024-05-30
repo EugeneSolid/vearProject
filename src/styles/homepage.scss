@@ -126,7 +126,7 @@
 
     &__finance-block {
       margin: 102px auto 0 auto;
-      width: 1170px;
+      max-width: 1170px;
       height: 300px;
       background-image: url("/src/assets/images/finance-background.png");
       background-position: top;
@@ -145,6 +145,7 @@
 
     &__logic-chain-section {
       max-width: 1170px;
+      padding: 0 30px;
       margin: 0 auto 113px auto;
 
       img {
@@ -168,11 +169,12 @@
 
   .community-section {
     margin: 160px 0;
-    padding: 80px 135px;
+    padding: 80px 20px;
     background: #F1F2F6;
 
     .community-list {
       max-width: 1170px !important;
+      gap: 8px
     }
 
     .community-block {
@@ -180,7 +182,7 @@
       width: 270px;
       background: linear-gradient(180deg, #FFFFFF 17.71%, rgba(255, 255, 255, 0) 100%);
       border-radius: 24px;
-      padding: 50px;
+      padding: 50px 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -349,6 +351,10 @@
   .properties {
     max-width: 1170px;
     margin: 92px auto 0 auto;
+
+    .properties-list {
+      gap: 15px;
+    }
   }
 
   .show-all-properties-btn {

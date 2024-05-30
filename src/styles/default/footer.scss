@@ -1,8 +1,7 @@
 .footer {
-  max-height: 580px;
   background: #F1F2F6;
   font-family: 'SF Pro Display';
-  padding: 33px 135px;
+  padding: 33px 10px;
 
   .content {
     margin: 0 auto;
@@ -18,9 +17,20 @@
     text-align: justify;
   }
 
+  &__links-section {
+    gap: 10px;
+  }
+
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
   &__social-media-links {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
+    justify-content: end;
+
     .media-link {
       padding: 14px;
       display: block;
@@ -67,7 +77,6 @@
 @media screen and (max-width: 768px){
   .footer {
     padding: 30px 10px;
-    max-height: unset;
 
     .footer-tec-links {
       gap: 8px;

@@ -495,6 +495,7 @@
 
       &__logic-chain-section {
         padding: 0 30px;
+        margin-bottom: 20px !important;
 
         .chain-component {
           flex-direction: column;
@@ -533,6 +534,7 @@
         width: unset !important;
         padding: 0 30px;
         height: unset;
+        margin-top: 70px !important;
 
         .block-info {
           margin-top: 0;
@@ -582,6 +584,7 @@
     .community-section {
       padding: 40px 0;
       margin-bottom: 80px;
+      margin-top: 0;
 
       .title {
         margin-bottom: 27px !important;
@@ -715,8 +718,6 @@
     .view-whitepaper {
       height: 320px;
       margin: 80px 10px;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
 
       &::after {
        background-size: auto;

@@ -54,7 +54,7 @@ export default {
       <span class="option-name"><i class="fi fi-rs-bell"></i> Notifications</span>
       <i class="arrow-icon fi fi-br-angle-small-right"></i>
     </button>
-    <button class="error sidebar-option w-100" @click="this.logout">
+    <button class="error sidebar-option w-100" @click="this.logout" data-bs-dismiss="offcanvas">
       <span class="option-name"><i class="logout-icon fi fi-rs-arrow-circle-right"></i> Sign Out</span>
     </button>
   </div>

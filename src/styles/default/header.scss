@@ -110,6 +110,8 @@
   line-height: 19.09px;
   text-align: left;
   color: black;
+  display: flex;
+  align-items: center;
   background-color: transparent !important;
 
   &.router-link-active {
@@ -264,4 +266,11 @@
     }
   }
 
+}
+
+@media screen and (max-width: 1170px){
+  .header__link:not(.home-link) {
+    padding: 13.5px 10px;
+    width: 141px;
+  }
 }

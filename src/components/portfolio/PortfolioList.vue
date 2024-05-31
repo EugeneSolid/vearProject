@@ -15,13 +15,15 @@ export default {
 
 <template>
 <div class="portfolio-list">
-  <div class="d-flex property-view-toggler mb-4">
-    <button @click="this.selectedType = 'list'"
-            :class="{'toggler-btn d-flex align-items-center justify-content-center': true, 'selected': this.selectedType === 'list'}"><i class="fi fi-rr-list me-2"></i> List
-    </button>
-    <button @click="this.selectedType = 'grid'"
-            :class="{'toggler-btn d-flex align-items-center justify-content-center': true, 'selected': this.selectedType === 'grid'}"><i class="fi fi-sr-apps me-2"></i> Grid
-    </button>
+  <div class="toggler-component">
+    <div class="d-flex property-view-toggler mb-4">
+      <button @click="this.selectedType = 'list'"
+              :class="{'toggler-btn d-flex align-items-center justify-content-center': true, 'selected': this.selectedType === 'list'}"><i class="fi fi-rr-list me-2"></i> List
+      </button>
+      <button @click="this.selectedType = 'grid'"
+              :class="{'toggler-btn d-flex align-items-center justify-content-center': true, 'selected': this.selectedType === 'grid'}"><i class="fi fi-sr-apps me-2"></i> Grid
+      </button>
+    </div>
   </div>
   <PortfolioListView v-if="this.selectedType === 'list'"/>
   <PortfolioGridView v-if="this.selectedType === 'grid'"/>

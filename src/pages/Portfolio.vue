@@ -1,6 +1,4 @@
 <script>
-
-
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
 import PortfolioStatistics from "@/components/portfolio/PortfolioStatistics.vue";
 import PortfolioGraphics from "@/components/portfolio/PortfolioGraphics.vue";
@@ -15,7 +13,9 @@ export default {
 <template>
 <default-layout>
   <div class="portfolio">
-    <PortfolioStatistics/>
+    <div class="portfolio-statistics">
+      <PortfolioStatistics/>
+    </div>
     <PortfolioGraphics/>
     <PortfolioList/>
   </div>

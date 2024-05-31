@@ -650,6 +650,12 @@
     .swap-graphic {
       width: 100%;
       overflow-x: scroll;
+      border: 1px solid #D0D9E5;
+      border-radius: 13px;
+
+      .linear-graphic {
+        border: none;
+      }
     }
   }
 }

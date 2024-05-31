@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div class="d-flex justify-content-between">
+  <div class="d-flex justify-content-between gap-3 portfolio-statistics-section">
       <div class="d-flex justify-content-between statistics-block">
         <div>
           <p class="mb-2 statistic-count">25</p>

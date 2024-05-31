@@ -501,24 +501,21 @@
 
     &-line {
       opacity: 1;
-      border-top: 4px solid #CFD9E5;
-      width: 50px;
-      transform: rotate(90deg);
+      border-left: 4px solid #CFD9E5;
+      left: -31px;
 
       &.active {
         border-color: #0360EA;
       }
 
       &.first {
-        width: 55px;
-        top: 30px;
-        left: -56px;
+        height: 100%;
+        top: 23px;
       }
 
       &.second {
-        width: 375px;
-        top: 180px;
-        left: -216px;
+        height: 90%;
+        top: 0;
       }
     }
   }
@@ -925,8 +922,24 @@
       }
     }
 
+    .info-section-title {
+      font-size: 20px;
+    }
+
     .property-info {
       width: 100%;
+
+      .property-navigation {
+        justify-content: start;
+        flex-wrap: wrap;
+
+        .navigation-item {
+          font-size: 15px;
+          padding: 11px;
+          width: 100%;
+        }
+      }
+
       .property-options-list {
         flex-direction: column;
 
@@ -950,6 +963,57 @@
           }
         }
       }
+
+      .key-info, .blockchain {
+        .info-values {
+          flex-direction: column;
+        }
+
+        .property-info-block {
+          width: 100%;
+        }
+
+        .info-button {
+          font-size: 18px;
+          padding: 7px !important;
+          width: 100% !important;
+        }
+
+      }
+
+      .financials {
+
+        .property-info-block {
+          &__value {
+            font-size: 18px;
+          }
+
+          &__title {
+            font-size: 15px;
+          }
+        }
+
+        .show-more-btn {
+          font-size: 13px;
+        }
+      }
+
+      .documents {
+        .property-title.bigger {
+          font-size: 26px;
+        }
+
+        .property-address {
+          font-size: 16px !important;
+        }
+
+        .info-button {
+          font-size: 18px;
+          padding: 7px;
+          width: 100% !important;
+        }
+      }
+
 
       .location-img {
         width: 100% !important;

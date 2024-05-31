@@ -11,7 +11,7 @@ export default {
       <p class="mb-0 property-info-block__title">Address</p>
       <p class="text-end mb-0 property-info-block__value">Lakewood, New Jersey(NJ), 08701</p>
     </div>
-    <div class="d-flex gap-3">
+    <div class="d-flex gap-3 info-values">
       <div class="d-flex flex-column gap-3">
         <div class="d-flex justify-content-between property-info-block">
           <p class="mb-0 property-info-block__title">Property Type</p>

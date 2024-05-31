@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="blockchain mt-4">
-    <div class="d-flex gap-3">
+    <div class="d-flex gap-3 info-values">
       <div class="d-flex flex-column gap-3">
         <div class="d-flex justify-content-between property-info-block">
           <p class="mb-0 property-info-block__title">Total Tokens</p>

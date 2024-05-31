@@ -6,10 +6,10 @@ export default {
 
 <template>
   <div class="timeline mt-4 position-relative">
-    <hr class="position-absolute timeline-line second"/>
+    <div class="position-absolute timeline-line second"></div>
     <div class="position-relative">
       <i class="timeline-icon active fi fi-sr-check-circle position-absolute"></i>
-      <hr class="position-absolute timeline-line first active"/>
+      <div class="position-absolute timeline-line first active"></div>
       <p class="timeline-date">June 25, 2024</p>
       <p class="timeline-description">Property is listed on Liquid Estate & Investor express buying interest, investors get whitelist.</p>
     </div>

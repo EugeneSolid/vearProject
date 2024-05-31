@@ -237,7 +237,6 @@
       .linear-graphic {
         width: 1170px;
         margin-bottom: 0px;
-        border: none;
       }
     }
 
@@ -264,24 +263,6 @@
 @media screen and (max-width: 768px) {
   .portfolio {
     padding: 0 30px 45px;
-
-    .portfolio-graphic {
-      .linear-graphic {
-        .graphic-title {
-          font-size: 18px;
-        }
-
-        .graphic-value {
-          font-size: 28px;
-        }
-
-        .graphic-period {
-          font-size: 15px;
-          height: 38px;
-          padding: 7.5px 3px;
-        }
-      }
-    }
 
     .other-graphics {
       flex-direction: column;

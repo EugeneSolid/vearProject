@@ -114,3 +114,27 @@
     }
   }
 }
+
+@media screen and (max-width: 1170px) {
+  .linear-graphic {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .linear-graphic {
+    .graphic-title {
+      font-size: 18px;
+    }
+
+    .graphic-value {
+      font-size: 28px;
+    }
+
+    .graphic-period {
+      font-size: 15px;
+      height: 38px;
+      padding: 7.5px 3px;
+    }
+  }
+}

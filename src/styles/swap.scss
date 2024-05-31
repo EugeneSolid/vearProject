@@ -605,6 +605,20 @@
     }
   }
 
+  #connectWalletModal {
+    .modal-body {
+      padding: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .wallet-item {
+        width: 110px !important;
+        height: 110px;
+        font-size: 15px;
+      }
+    }
+  }
+
   .swap-section {
     padding: 0 30px;
     flex-direction: column;

@@ -57,7 +57,7 @@ export default {
     </div>
     <div class="d-flex justify-content-between resident-question align-items-center">
       <p class="profile-page__info-text mb-0">Are you a resident or cetizen of the united states or It’s Territories? <span class="error">*</span></p>
-      <div class="d-flex gap-2">
+      <div class="d-flex gap-2 buttons">
         <button class="resident-question__button">Yes</button>
         <button class="resident-question__button active">No</button>
       </div>

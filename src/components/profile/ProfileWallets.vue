@@ -10,9 +10,22 @@ export default {
   methods: {
     addWallet() {
       this.registeredWallets.push(this.walletId)
+      this.walletId = ''
     },
     copyValue(text) {
       navigator.clipboard.writeText(text)
+    },
+    truncateWithEllipsis(str, maxLength) {
+      const ellipsis = '.....';
+      const ellipsisLength = ellipsis.length;
+      const frontChars = 5;
+      const backChars = maxLength - frontChars - ellipsisLength;
+
+      if (str.length <= maxLength) {
+        return str;
+      }
+
+      return str.slice(0, frontChars) + ellipsis + str.slice(str.length - backChars);
     }
   }
 }
@@ -46,12 +59,20 @@ export default {
             <button class="change-btn">Change Wallet</button>
           </div>
         </div>
-        <div class="d-flex flex-column w-100 mt-3">
+        <div class="d-flex flex-column add-wallet-section w-100 mt-3">
           <label class="section-label active">Registered Wallets</label>
             <div class="position-relative registered-wallet mb-3" v-for="wallet in registeredWallets">
               <p class="mb-0 wallet-value highlight-area">{{wallet}}</p>
               <i class="fi fi-rr-copy position-absolute copy-value-icon highlight-area"
                  @click="copyValue(wallet)"></i>
+          </div>
+        </div>
+        <div class="d-flex flex-column add-wallet-section-mobile w-100 mt-3">
+          <label class="section-label active">Registered Wallets</label>
+          <div class="position-relative registered-wallet mb-3" v-for="wallet in registeredWallets">
+            <p class="mb-0 wallet-value highlight-area">{{truncateWithEllipsis(wallet, 17)}}</p>
+            <i class="fi fi-rr-copy position-absolute copy-value-icon highlight-area"
+               @click="copyValue(wallet)"></i>
           </div>
         </div>
       </div>

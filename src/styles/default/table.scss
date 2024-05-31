@@ -141,3 +141,52 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .default-table {
+    width: 1170px !important;
+
+    .claim-btn {
+      padding: 8px !important;
+    }
+
+    .table-property-img {
+      width: 42px !important;
+      height: 42px !important;
+    }
+
+    .table-data, .table-text {
+      font-size: 15px !important;
+
+      &.bold {
+        font-size: 16px;
+      }
+    }
+
+    .property-row {
+
+      height: 65px !important;
+    }
+
+    td {
+      padding: 10px 14px;
+    }
+
+    td:first-child, th:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 99;
+      background: linear-gradient(90deg, rgb(255, 255, 255) 70%, rgba(255, 255, 255, 0) 91%);
+    }
+
+    th {
+      padding: 14px 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .default-table {
+    width: 770px !important;
+  }
+}

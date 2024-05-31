@@ -1,10 +1,11 @@
 <script>
 import DefaultLayout from "@/layouts/DefaultLayout.vue";
 import ProfileSidebar from "@/components/profile/ProfileSidebar.vue";
+import ProfileSidebarMobile from "@/components/profile/ProfileSidebarMobile.vue";
 
 export default {
   name: "Profile",
-  components: {ProfileSidebar, DefaultLayout}
+  components: {ProfileSidebar, DefaultLayout, ProfileSidebarMobile},
 }
 </script>
 
@@ -19,9 +20,22 @@ export default {
         </div>
         <p class="mb-0 profile-name">Michael Antonio</p>
       </div>
+      <div class="profile-sidebar-mobile">
+        <button class="open-mobile-sidebar" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
+                aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">Profile Menu
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar"
+             aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-body p-0">
+            <ProfileSidebarMobile/>
+          </div>
+        </div>
+      </div>
+
       <div class="d-flex gap-4 mt-5 profile-content">
         <ProfileSidebar/>
-        <router-view />
+        <router-view/>
       </div>
 
     </div>

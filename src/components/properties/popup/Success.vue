@@ -69,4 +69,23 @@ export default {
     text-decoration: none;
   }
 }
+
+@media screen and (max-width: 768px){
+  .success-section {
+    padding: 0 24px 24px;
+
+    .text, .close {
+      font-size: 16px;
+    }
+
+    .email-input {
+      padding: 12px 24px;
+    }
+
+    .telegram-btn {
+      font-size: 17px;
+      padding: 10px;
+    }
+  }
+}
 </style>

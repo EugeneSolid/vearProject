@@ -88,4 +88,24 @@ export default {
     padding: 17px 0;
   }
 }
+
+@media screen and (max-width: 768px){
+.notify-section {
+  padding: 0 24px 24px;
+
+  .text {
+    font-size: 16px;
+  }
+
+  .email-input {
+    padding: 12px 24px;
+  }
+
+  .button {
+    margin-top: 28px;
+    font-size: 17px;
+    padding: 10px;
+  }
+}
+}
 </style>

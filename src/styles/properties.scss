@@ -835,3 +835,125 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  .property-page {
+    padding: 45px 30px;
+
+    .profile-btn {
+      font-size: 14px;
+
+      .profile-img {
+        width: 44px;
+        height: 44px;
+      }
+    }
+
+    &__back-btn {
+      font-size: 18px;
+      padding: 10px;
+      width: 120px;
+    }
+
+    .top-part-section {
+      flex-direction: column;
+
+      .gallery {
+        width: 100%;
+        height: 350px;
+
+        .swiper-button-next, .swiper-button-prev {
+          display: none !important;
+        }
+
+        .property-type {
+          width: 140px;
+          padding: 8px 0;
+          bottom: 104px;
+          font-size: 14px;
+        }
+
+        .images-count {
+          font-size: 14px;
+          bottom: 113px;
+        }
+      }
+
+      .invest-section {
+        margin-top: 20px;
+        width: 100%;
+
+        .section-title {
+          font-size: 15px;
+          margin-bottom: 10px !important;
+        }
+
+        .section-value {
+          font-size: 17px;
+          &.bold {
+            font-size: 20px;
+          }
+        }
+
+        .section-middle-title {
+          font-size: 14px;
+
+          &.bold {
+            font-size: 16px;
+            margin-bottom: 12px !important;
+          }
+        }
+
+        .range-result-title {
+          font-size: 16px;
+          margin-bottom: 8px !important;
+        }
+
+        .range-result-value {
+          font-size: 20px;
+        }
+
+        .invest-btn {
+          font-size: 20px;
+          padding: 10px;
+        }
+
+        .vue-slider {
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .property-info {
+      width: 100%;
+      .property-options-list {
+        flex-direction: column;
+
+        .property-option {
+          width: 100%;
+          height: 90px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .option-margin {
+            margin-top: 0px;
+
+            .option-name {
+              font-size: 14px;
+            }
+
+            .option-icon {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+
+      .location-img {
+        width: 100% !important;
+      }
+    }
+  }
+}

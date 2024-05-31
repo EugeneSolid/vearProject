@@ -3,10 +3,11 @@ import InvestSection from "@/components/properties/InvestSection.vue";
 import PropertyGallery from "@/components/properties/PropertyGallery.vue";
 import PropertyInfo from "@/components/properties/PropertyInfo.vue";
 import Footer from "@/components/default/Footer.vue";
+import PropertyGalleryMobile from "@/components/properties/PropertyGalleryMobile.vue";
 
 export default {
   name: "Property",
-  components: {Footer, PropertyInfo, PropertyGallery, InvestSection},
+  components: {PropertyGalleryMobile, Footer, PropertyInfo, PropertyGallery, InvestSection},
   data() {
     return {
       properties: [
@@ -117,7 +118,12 @@ export default {
     </div>
   </div>
   <div style="gap: 30px" class="d-flex top-part-section">
-    <PropertyGallery :property="property"/>
+    <div class="property-gallery-desktop">
+      <PropertyGallery :property="property"/>
+    </div>
+    <div class="property-gallery-mobile">
+      <PropertyGalleryMobile :property="property"/>
+    </div>
     <InvestSection :property="property"/>
   </div>
   <PropertyInfo :property="property"/>
@@ -126,5 +132,21 @@ export default {
 </template>
 
 <style scoped>
+.property-gallery-desktop {
+  display: block;
+}
 
+.property-gallery-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px){
+  .property-gallery-desktop {
+    display: none;
+  }
+
+  .property-gallery-mobile {
+    display: block;
+  }
+}
 </style>

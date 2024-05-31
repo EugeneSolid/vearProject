@@ -92,7 +92,7 @@ export default {
     </div>
     <div>
       <p class="mb-3 info-section-title">Location</p>
-      <img style="width: 770px;" src="/vearProject/images/properties/property-map.png">
+      <img class="location-img" style="width: 770px;" src="/vearProject/images/properties/property-map.png">
     </div>
   </div>
 </template>

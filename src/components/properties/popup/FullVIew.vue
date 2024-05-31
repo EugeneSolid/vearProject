@@ -7,7 +7,7 @@ import 'swiper/scss/pagination';
 
 export default {
   name: "FullView",
-  props: ['imgSource', 'imgCount', 'currentSlide'],
+  props: ['imgSource', 'imgCount', 'currentSlide', 'id'],
   components: {
     Swiper,
     SwiperSlide,
@@ -24,7 +24,7 @@ export default {
     }
   },
   mounted() {
-    document.getElementById('fullView').addEventListener('show.bs.modal', event => {
+    document.getElementById(this.id).addEventListener('show.bs.modal', event => {
       this.swiper.slideTo(this.currentSlide - 1);
     })
   }
@@ -32,7 +32,7 @@ export default {
 </script>
 
 <template>
-  <div class="modal fade" id="fullView" tabindex="-1" aria-labelledby="fullViewLabel" aria-hidden="true">
+  <div class="modal fade fullView" :id="this.id" tabindex="-1" aria-labelledby="fullViewLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-body p-0">
@@ -57,7 +57,12 @@ export default {
 </template>
 
 <style>
-#fullView {
+.fullView {
+
+  &.show {
+    padding-right: 0 !important;
+  }
+
   .modal-dialog {
     max-width: 1170px !important;
     height: 100%;
@@ -103,6 +108,14 @@ export default {
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .fullViewSwiper {
+    .swiper-button-next, .swiper-button-prev {
+      display: none !important;
+    }
   }
 }
 

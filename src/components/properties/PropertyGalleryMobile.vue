@@ -18,7 +18,7 @@
         class="mySwiper2"
     >
       <swiper-slide v-for="count in property.imgCount">
-        <div class="shadow" data-bs-target="#fullViewDesktop" data-bs-toggle="modal">
+        <div class="shadow" data-bs-target="#fullViewMobile" data-bs-toggle="modal">
           <img
                :src="'/vearProject/images/properties/property-' + property.number.slice(-1) + '/' + count + '.jpg'"/>
         </div>
@@ -30,7 +30,7 @@
       <swiper
           @swiper="setThumbsSwiper"
           :spaceBetween="8"
-          :slidesPerView="8"
+          :slidesPerView="4"
           :freeMode="true"
           :watchSlidesProgress="true"
           :watchSlidesVisibility="true"
@@ -46,9 +46,8 @@
   </div>
 <FullView :imgSource="'/vearProject/images/properties/property-' + property.number.slice(-1) + '/'"
           :imgCount="property.imgCount"
-          id="fullViewDesktop"
-          :currentSlide="this.counter"
-/>
+          id="fullViewMobile"
+          :currentSlide="this.counter"/>
 </template>
 <script>
 import {Swiper, SwiperSlide} from 'swiper/vue';
@@ -209,7 +208,7 @@ export default {
 
     .swiper-slide {
       width: 88px;
-      height: 88px;
+      height: 70px;
       border-radius: 13px;
       border: 2px solid transparent;
       cursor: pointer;
@@ -228,29 +227,6 @@ export default {
 
   .swiper-button-next, .swiper-button-prev {
     display: none;
-  }
-
-  &:hover {
-    .swiper-button-next, .swiper-button-prev {
-      display: flex;
-      background: #282D3C66;
-      width: 40px;
-      height: 40px;
-      border-radius: 100%;
-
-      &:after {
-        font-size: 16px;
-        color: white;
-      }
-    }
-
-    .swiper-button-next {
-      right: 32px;
-    }
-
-    .swiper-button-prev {
-      left: 32px;
-    }
   }
 }
 

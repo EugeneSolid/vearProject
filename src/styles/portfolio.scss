@@ -225,7 +225,7 @@
 @media screen and (max-width: 1170px) {
 
   .portfolio {
-    padding: 0 30px 45px;
+    padding: 0 10px 45px;
 
     .portfolio-graphic {
       width: 100%;
@@ -262,7 +262,11 @@
 
 @media screen and (max-width: 768px) {
   .portfolio {
-    padding: 0 30px 45px;
+    padding: 0 10px 45px;
+
+    .graphics-section {
+      padding: 0 20px;
+    }
 
     .other-graphics {
       flex-direction: column;
@@ -274,6 +278,7 @@
     }
 
     .portfolio-statistics {
+      padding: 0 20px;
       &-section {
         flex-direction: column;
         gap: 20px !important;
@@ -329,6 +334,13 @@
 
         .default-table {
           width: 1170px !important;
+
+          .property-row {
+            height: 82px !important;
+            .currency-changes {
+              margin-bottom: 4px;
+            }
+          }
 
           td:first-child, th:first-child {
             background: linear-gradient(90deg, rgba(241, 242, 246, 1) 70%, rgba(255, 255, 255, 0) 91%);

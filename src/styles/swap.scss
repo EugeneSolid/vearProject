@@ -592,6 +592,7 @@
 
       .lidq-balance {
         padding-right: 11px;
+        font-size: 14px;
 
         svg {
           width: 28px;
@@ -599,8 +600,13 @@
         }
       }
 
+      .open-actions-btn {
+        height: 100%;
+      }
+
       .buy-btn, .connect-wallet-btn {
         padding: 8.1px 4px;
+        font-size: 14px;
       }
     }
   }
@@ -620,7 +626,7 @@
   }
 
   .swap-section {
-    padding: 0 30px;
+    padding: 0 30px !important;
     flex-direction: column;
 
     .swap-block {

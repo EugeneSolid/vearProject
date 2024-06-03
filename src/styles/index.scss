@@ -73,7 +73,7 @@ body {
 @media screen and (max-width: 768px) {
 
   * {
-    letter-spacing: unset;
+    letter-spacing: unset !important;
   }
   .title {
     font-size: 25px;

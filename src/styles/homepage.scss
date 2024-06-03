@@ -72,7 +72,7 @@
       margin: 0 auto 44px auto;
 
       .description {
-        font-size: 18px !important;
+        font-size: 18px;
       }
     }
 
@@ -485,6 +485,12 @@
 
       .title {
         margin-bottom: 16px !important;
+      }
+
+      &__header {
+        .description {
+          font-size: 15px !important;
+        }
       }
 
       .advantages-section {

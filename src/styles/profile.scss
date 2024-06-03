@@ -492,11 +492,15 @@
         width: fit-content;
 
         .offcanvas-body {
+          border-top-right-radius: 13px;
+          border-bottom-right-radius: 13px;
+          background: #F1F2F6;
 
           .profile-sidebar {
             display: block !important;
-            height: unset !important;
+            height: 100% !important;
             padding: 20px;
+            background-color: transparent;
           }
         }
       }

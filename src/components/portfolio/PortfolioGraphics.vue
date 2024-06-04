@@ -48,6 +48,21 @@ export default {
         <img class="" src="/vearProject/images/graphics/circle.png">
       </div>
     </div>
+    <div class="linear-mobile-graphic ">
+      <p class="mb-2 graphic-name text-center">Portfolio value:</p>
+      <p class="mb-4 text-center graphic-name hover">$114,203</p>
+      <img class="w-100" src="/vearProject/images/graphics/linear_mobile.svg">
+      <div class="d-flex justify-content-between graphic-grade-mobile">
+        <span>$89,170</span>
+        <span>$114,203</span>
+      </div>
+      <div class="d-flex gap-2 justify-content-center">
+        <p :class="{'graphic-period mb-0': true, 'selected': selectedPeriod === period}"
+           @click="selectedPeriod = period" v-for="period in periods">
+          {{period}}
+        </p>
+      </div>
+    </div>
     <div class="map-location">
       <p class="mb-4 graphic-name">Properties Map Location</p>
       <div class="map-location__info">

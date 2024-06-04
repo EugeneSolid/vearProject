@@ -59,6 +59,10 @@
       }
     }
 
+    .linear-mobile-graphic {
+      display: none;
+    }
+
     .map-location {
       padding: 24px;
       border: 1px solid #D0D9E5;
@@ -268,12 +272,56 @@
       padding: 0 20px;
     }
 
+    .portfolio-graphic {
+      display: none;
+    }
+
     .other-graphics {
       flex-direction: column;
-      gap: 20px;
+      gap: 20px !important;
 
-      .circle-graphic, .map-location {
+      .linear-mobile-graphic {
+        display: block;
+
+        .graphic-grade-mobile {
+          font-size: 12px;
+          color: #3C3C4399;
+          margin-bottom: 10px;
+        }
+
+        .graphic-period {
+          font-size: 13px;
+          width: 40px;
+          border-radius: 13px;
+          color: #3C3C4399;
+          display: flex;
+          font-weight: 400;
+          justify-content: center;
+          transition: background .3s, color .3s;
+          padding: 1px 0;
+
+          &.selected {
+            font-weight: 500;
+            color: white;
+            background: #257CFF;
+          }
+        }
+      }
+
+      .circle-graphic, .map-location, .linear-mobile-graphic {
         width: unset;
+        border: none;
+
+        .graphic-name {
+          font-size: 26px;
+          font-weight: 700;
+          text-align: center;
+
+          &.hover {
+            font-size: 24px;
+            color: #257CFF;
+          }
+        }
       }
     }
 
@@ -369,10 +417,11 @@
         .other-price {
           &__label {
             font-size: 14px;
+            line-height: 16px;
           }
 
           &__value {
-            font-size: 14px;
+            font-size: 16px;
           }
         }
 

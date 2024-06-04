@@ -7,7 +7,7 @@ export default {
   components: {PortfolioGridView, PortfolioListView},
   data() {
     return {
-      selectedType: 'list',
+      selectedType: 'grid',
     }
   }
 }

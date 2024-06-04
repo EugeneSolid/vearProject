@@ -44,7 +44,7 @@ export default {
               <i class="fi fi-rr-copy position-absolute copy-value-icon"
                  @click="copyValue('0x235HFOEGEO9GIR87LJ898E6EGJ890IF3H9J23')"></i>
             </div>
-            <p class="profile-page__info-text">You recieve your RealTokens on Gnosis Chain (xDai).
+            <p class="profile-page__info-text">You receive your LE on BASE L2.
               <br/>
               Please contact us via chat to change this wallet.</p>
           </div>
@@ -55,7 +55,7 @@ export default {
               <i class="fi fi-rr-copy position-absolute copy-value-icon"
                  @click="copyValue('0x235HFOEGEO9GIR87LJ898E6EGJ890IF3H9J23')"></i>
             </div>
-            <p class="mb-2 profile-page__info-text">You recieve your USDC on Gnosis Chain (xDai).</p>
+            <p class="mb-2 profile-page__info-text">You recieve your USDC on on BASE L2.</p>
             <button class="change-btn">Change Wallet</button>
           </div>
         </div>
@@ -87,7 +87,7 @@ export default {
         </div>
       </div>
       <p class="mt-3 profile-page__info-text">Ensure you’ve entered the correct address and you are using external
-        Algorand (ALGO) wallet address and not a
+        BASE L2 wallet address and not a
         virtual wallet address (e.g Coinbase)</p>
     </div>
   </div>

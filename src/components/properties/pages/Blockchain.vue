@@ -20,7 +20,7 @@ export default {
       <div class="d-flex flex-column gap-3">
         <div class="d-flex justify-content-between property-info-block">
           <p class="mb-0 property-info-block__title">Blockchain</p>
-          <p class="text-end mb-0 property-info-block__value">ETH</p>
+          <p class="text-end mb-0 property-info-block__value">BASE</p>
         </div>
         <div class="d-flex justify-content-between property-info-block">
           <p class="mb-0 property-info-block__title">Maximum Purchase</p>

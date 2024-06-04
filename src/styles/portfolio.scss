@@ -278,27 +278,7 @@
     }
 
     .portfolio-statistics {
-      padding: 0 20px;
-      &-section {
-        flex-direction: column;
-        gap: 20px !important;
-
-        .statistics-block {
-          width: 100%;
-          padding: 18px 28px;
-
-          .statistic-count {
-            font-size: 22px;
-            font-weight: 700;
-            line-height: 24px;
-          }
-
-          .statistic-icon {
-            font-size: 28px;
-            height: 35px;
-          }
-        }
-      }
+      display: none;
     }
 
     .portfolio-list {

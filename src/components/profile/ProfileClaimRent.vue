@@ -70,7 +70,7 @@ export default {
             <p class="mb-0 claim-section__info">Claimed rent will be visible in your portfolio</p>
           </div>
           <div style="height: 56px" class="d-flex justify-content-end align-items-center claim-button-section">
-            <p style="max-width: 110px;" class="mb-0 me-3 text-end profile-page__info-text">on ethereum mainment</p>
+            <p style="max-width: 110px;" class="mb-0 me-3 text-end profile-page__info-text">on BASE L2</p>
             <button class="section-add-btn">Claim All</button>
           </div>
         </div>

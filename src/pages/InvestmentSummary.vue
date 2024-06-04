@@ -37,6 +37,7 @@ export default {
 </script>
 
 <template>
+  <div>
   <div class="property-page">
     <div class="d-flex justify-content-between">
       <button @click="$router.push('/property/' + selectedProperty?.number.toLowerCase())"
@@ -63,6 +64,7 @@ export default {
   </div>
   <button class="toggle-modal" hidden="hidden" data-bs-target="#notifyModal" data-bs-toggle="modal"></button>
   <NotificationModal/>
+  </div>
 </template>
 
 <style scoped>

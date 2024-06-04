@@ -23,8 +23,8 @@ export default {
 <template>
   <div class="financials mt-4">
     <div class="total-collapse">
-      <div class="d-flex justify-content-between property-info-block w-100 mb-3 align-items-center">
-        <div class="d-flex gap-3 align-items-center">
+      <div class="d-flex justify-content-between property-info-block gap-1 w-100 mb-3 align-items-center">
+        <div class="d-flex gap-3 align-items-center toggle-section first">
           <p class="mb-0 property-info-block__title">Total Investment</p>
           <p class="mb-0 d-flex align-items-center show-more-btn collapsed" type="button"
              @click="collapseDropdown($event, '.total-collapse'); this.isTotalOpened = !this.isTotalOpened"
@@ -34,7 +34,7 @@ export default {
             <span class="text-decoration-underline">{{ isTotalOpened ? 'Less' : 'More' }} Details</span>
           </p>
         </div>
-        <p class="text-end mb-0 property-info-block__value">$334,987,782</p>
+        <p class="text-end mb-0 property-info-block__value">$334,782</p>
       </div>
       <div class="collapse" id="collapseExample">
         <div class="card-body">
@@ -78,8 +78,8 @@ export default {
       <p class="text-end mb-0 property-info-block__value">$50,000</p>
     </div>
     <div class="annual-collapse">
-      <div class="d-flex justify-content-between property-info-block w-100 mb-3 align-items-center">
-        <div class="d-flex gap-3 align-items-center">
+      <div class="d-flex justify-content-between property-info-block gap-1 w-100 mb-3 align-items-center">
+        <div class="d-flex gap-3 align-items-center toggle-section">
           <p class="mb-0 property-info-block__title">Annual Costs</p>
           <p class="mb-0 d-flex align-items-center show-more-btn collapsed" type="button"
              @click="collapseDropdown($event, '.annual-collapse'); this.isAnnualOpened = !this.isAnnualOpened"

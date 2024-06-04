@@ -44,10 +44,10 @@ export default {
       </div>
       <div class="right-side-button">
       <div v-if="this.$route.path === '/'">
-        <a target="_blank" class="header__button" href="https://liquidestate.io/">
+        <router-link class="header__button" to="/marketplace">
           <img class="button-img" src="/vearProject/images/currencies/lidq.svg">
           App Demo
-        </a>
+        </router-link>
       </div>
       <div v-else>
         <router-link v-if="!this.isUserAuthorized()" class="header__login-button" to="/login">

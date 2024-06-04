@@ -19,13 +19,28 @@ import InvestmentSummary from "@/pages/InvestmentSummary.vue";
 
 const routes = [
     {path: '/', component: Homepage},
-    {path: '/marketplace', component: Marketplace},
+    {
+        path: '/marketplace',
+        component: Marketplace,
+        beforeEnter: (to, from, next) => {
+            if(window.innerWidth < 768 && from.path.includes('property')) {
+                to.meta.transition = 'router-view-back';
+            }
+            next()
+        },
+    },
     {path: '/login', component: Login},
     {path: '/portfolio', component: Portfolio},
     {path: '/swap', component: Swap},
     {
         path: '/property/:number',
         component: Property,
+        beforeEnter: (to, from, next) => {
+            if(window.innerWidth < 768 && !!from.href) {
+                to.meta.transition = 'router-view';
+            }
+            next()
+        },
         children: [
             {
                 path: '',
@@ -86,7 +101,9 @@ const router = createRouter({
                 top: savedPosition ? -500 : 0
             };
         }
-        return { x: 0, y: 0 };  // Go to the top of the page if no hash
+        if(to.matched[0]?.path !== from.matched[0]?.path) {
+            window.scrollTo(0, 0);
+        }
     },
 })
 

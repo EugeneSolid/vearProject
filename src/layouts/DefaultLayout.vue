@@ -14,9 +14,11 @@ export default {
 </script>
 
 <template>
-  <Header/>
-  <slot />
-  <Footer/>
+  <div>
+    <Header/>
+    <slot />
+    <Footer/>
+  </div>
 </template>
 
 <style scoped>

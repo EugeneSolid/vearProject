@@ -21,7 +21,7 @@ export default {
           income: '9.9%',
           rent: '$1,905',
           display: 'new',
-          imgCount: 9
+          imgCount: 7
         },
         {
           image: '/vearProject/images/properties/property-2.png',
@@ -100,35 +100,37 @@ export default {
 </script>
 
 <template>
-<div class="property-page">
-  <div class="d-flex justify-content-between">
-    <button @click="$router.push('/marketplace')" class="property-page__back-btn">
-      <i class="fi fi-br-arrow-small-left"></i>
-      Back
-    </button>
-    <div>
-      <router-link v-if="!this.isUserAuthorized()" class="header__login-button" to="/login">
-        <i class="fi fi-rr-circle-user"></i>
-        Login/Register
-      </router-link>
-      <router-link v-else class="profile-btn" to="/profile">
-        <img class="profile-img" src="/vearProject/images/header/profile.jpeg"/>
-        Michael Antonio
-      </router-link>
+  <div>
+    <div class="property-page">
+      <div class="d-flex justify-content-between">
+        <button @click="$router.push('/marketplace')" class="property-page__back-btn">
+          <i class="fi fi-br-arrow-small-left"></i>
+          Back
+        </button>
+        <div>
+          <router-link v-if="!this.isUserAuthorized()" class="header__login-button" to="/login">
+            <i class="fi fi-rr-circle-user"></i>
+            Login/Register
+          </router-link>
+          <router-link v-else class="profile-btn" to="/profile">
+            <img class="profile-img" src="/vearProject/images/header/profile.jpeg"/>
+            Michael Antonio
+          </router-link>
+        </div>
+      </div>
+      <div style="gap: 30px" class="d-flex top-part-section">
+        <div class="property-gallery-desktop">
+          <PropertyGallery :property="property"/>
+        </div>
+        <div class="property-gallery-mobile">
+          <PropertyGalleryMobile :property="property"/>
+        </div>
+        <InvestSection :property="property"/>
+      </div>
+      <PropertyInfo :property="property"/>
     </div>
+    <Footer/>
   </div>
-  <div style="gap: 30px" class="d-flex top-part-section">
-    <div class="property-gallery-desktop">
-      <PropertyGallery :property="property"/>
-    </div>
-    <div class="property-gallery-mobile">
-      <PropertyGalleryMobile :property="property"/>
-    </div>
-    <InvestSection :property="property"/>
-  </div>
-  <PropertyInfo :property="property"/>
-</div>
-  <Footer/>
 </template>
 
 <style scoped>

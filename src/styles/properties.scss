@@ -30,7 +30,7 @@
     top: 16px;
     left: 16px;
     border-radius: 20px;
-    z-index: 99;
+    z-index: 9;
 
     i {
       font-size: 16px;
@@ -132,6 +132,7 @@
 }
 
 .property-page {
+  background-color: white;
   padding: 56px 0px;
   max-width: 1170px;
   margin: 0 auto;
@@ -937,21 +938,25 @@
           font-size: 15px;
           padding: 11px;
           width: 100%;
+
+          &.router-link-exact-active {
+            font-size: 18px;
+          }
         }
       }
 
       .property-options-list {
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
 
         .property-option {
-          width: 100%;
-          height: 90px;
+          width: 100px;
+          height: 100px;
           display: flex;
-          align-items: center;
           justify-content: center;
 
           .option-margin {
-            margin-top: 0px;
+            margin-top: 25px;
 
             .option-name {
               font-size: 14px;
@@ -973,6 +978,16 @@
           width: 100%;
         }
 
+        .property-info-block {
+          &__value {
+            font-size: 16px;
+          }
+
+          &__title {
+            font-size: 14px;
+          }
+        }
+
         .info-button {
           font-size: 18px;
           padding: 7px !important;
@@ -983,18 +998,37 @@
 
       .financials {
 
+        .toggle-section {
+          gap: 10px !important;
+
+          &.first {
+            .property-info-block {
+              &__title {
+                width: min-content;
+              }
+            }
+          }
+        }
+
         .property-info-block {
+
           &__value {
-            font-size: 18px;
+            font-size: 16px;
           }
 
           &__title {
-            font-size: 15px;
+            font-size: 14px;
           }
         }
 
         .show-more-btn {
-          font-size: 13px;
+          font-size: 12px;
+
+          i {
+            width: 20px;
+            height: 20px;
+            padding: 3px 4px;
+          }
         }
       }
 
@@ -1014,6 +1048,9 @@
         }
       }
 
+      .property-info-block {
+        padding: 16px;
+      }
 
       .location-img {
         width: 100% !important;

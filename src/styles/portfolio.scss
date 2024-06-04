@@ -267,9 +267,11 @@
 @media screen and (max-width: 768px) {
   .portfolio {
     padding: 0 10px 45px;
+    margin-top: 0;
 
     .graphics-section {
       padding: 0 20px;
+      margin-top: 0 !important;
     }
 
     .portfolio-graphic {
@@ -306,6 +308,10 @@
             background: #257CFF;
           }
         }
+      }
+
+      .circle-graphic {
+        padding-top: 10px !important;
       }
 
       .circle-graphic, .map-location, .linear-mobile-graphic {

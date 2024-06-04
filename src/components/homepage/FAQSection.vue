@@ -15,7 +15,7 @@ export default {
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="false"
                       aria-controls="panelsStayOpen-collapseOne">
-                <i class="accordion-icon fi fi-rs-user-check"></i><span class="faq-question ms-3">How can I participate in the presale?</span>
+                <i class="accordion-icon fi fi-rs-user-check"></i><span class="faq-question ms-3 me-1">How can I participate in the presale?</span>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -35,7 +35,7 @@ export default {
                       data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
                       aria-controls="panelsStayOpen-collapseTwo">
                 <i class="accordion-icon fi fi-sr-dollar"></i><span
-                  class="faq-question ms-3">How will rent be paid?</span>
+                  class="faq-question ms-3 me-1">How will rent be paid?</span>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -54,7 +54,7 @@ export default {
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
                       aria-controls="panelsStayOpen-collapseThree">
-                <i class="accordion-icon fi fi-rr-settings"></i><span class="faq-question ms-3">Who manages the properties?</span>
+                <i class="accordion-icon fi fi-rr-settings"></i><span class="faq-question ms-3 me-1">Who manages the properties?</span>
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -74,7 +74,7 @@ export default {
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                       data-bs-target="#pane-collapseOne" aria-expanded="false" aria-controls="pane-collapseOne">
-                <i class="accordion-icon fi fi-rs-building"></i><span class="faq-question ms-3">Will listed buildings have their own token?</span>
+                <i class="accordion-icon fi fi-rs-building"></i><span class="faq-question ms-3 me-1">Will listed buildings have their own token?</span>
               </button>
             </h2>
             <div id="pane-collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -94,7 +94,7 @@ export default {
                       data-bs-target="#panel-collapseTwo" aria-expanded="false"
                       aria-controls="panel-collapseTwo">
                 <i class="accordion-icon fi fi-rs-home"></i><span
-                  class="faq-question ms-3">Who owns the properties?</span>
+                  class="faq-question ms-3 me-1">Who owns the properties?</span>
               </button>
             </h2>
             <div id="panel-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
@@ -114,7 +114,7 @@ export default {
                       data-bs-target="#panel-collapseThree" aria-expanded="false"
                       aria-controls="panel-collapseThree">
                 <i class="accordion-icon fi fi-sr-coins"></i><span
-                  class="faq-question ms-3">Can I buy tokens using Fiat money?</span>
+                  class="faq-question ms-3 me-1">Can I buy tokens using Fiat money?</span>
               </button>
             </h2>
             <div id="panel-collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
